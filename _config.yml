@@ -1,0 +1,12 @@
+# Site settings
+title: Saft.Ing
+email: ["arndt@informatik.uni-leipzig.de", "hi@inspirito.de"]
+description: "Saft Engineering Taskforce is a group of software developers aiming to build the Semantic Application Framework Saft, a collection of components which helps software developers to create applications by exploiting Semantic Web technology."
+baseurl: ""
+url: "http://safting.github.io"
+github_username:  safting
+github_url: http://github.com/SaftIng
+
+# Build settings
+markdown: kramdown
+permalink: pretty
