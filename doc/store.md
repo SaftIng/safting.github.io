@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Saft.store
+title: saft.store
 ---
 
-_Saft.store_ is the Store interface
+_saft.store_ consists of the _StoreInterface_ with the abstract implementations _AbstractStatementPatternStore_ and _AbstractSparqlStoreAdapter_.
