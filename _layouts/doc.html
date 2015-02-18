@@ -11,5 +11,5 @@ layout: default
   {{ content }}
   </article>
   <hr/>
-  Last modified: {{ site.time | date_to_long_string }}
+  Last modified: {{ page.path | file_date | date_to_long_string }}
 </div>
