@@ -29,4 +29,9 @@ _Saft_ is structured in the _saft.library_ and _saft.skeleton_ with the followin
 
 ## Contribution
 
+### Conventions
+You are welcome to contribute to the source code of _Saft_ by forking our repositories and sending pull requests via github.
+If you are changing the code please also respect our [conventions regarding coding style, conding standard and the names](conventions).
+
+### Documentations
 This is the documentation for _Saft_. If you want to contribute to the documentation (even if it is just a typo) please feel free to fork the [site and documentation repository](https://github.com/SaftIng/safting.github.io) and create a pull request.
