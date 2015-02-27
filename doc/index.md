@@ -27,6 +27,17 @@ _Saft_ is structured in the _saft.library_ and _saft.skeleton_ with the followin
 
 ### saft.skeleton
 
+## Getting Started
+
+### Prerequirements
+
+For using _Saft_ your system has to match atleast the following prerequirements.
+
+#### Composer
+
+Composer is a dependency management system for PHP projects.
+You can get it at [https://getcomposer.com/](https://getcomposer.org/).
+
 ## Contribution
 
 ### Conventions
