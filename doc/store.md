@@ -19,7 +19,8 @@ Returns a list of all available graph URIs of the store. It also can include acc
 
 *Parameter*: none
 
-*Return value*:
+*Return value*: array
+
 - array: It contains available graph URI's, whereby the keys and values are graph URIs.
 
 
