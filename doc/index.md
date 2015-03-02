@@ -27,6 +27,12 @@ _Saft_ is structured in the _saft.library_ and _saft.skeleton_ with the followin
 
 ### saft.skeleton
 
+### Other Artefacts
+
+The [Logo](logo):
+
+[![logo](logo/logo_fira.svg)](logo)
+
 ## Getting Started
 
 ### Prerequirements
