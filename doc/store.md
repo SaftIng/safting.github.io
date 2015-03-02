@@ -5,8 +5,6 @@ title: saft.store
 
 Package _saft.store_ consists of Triple- and Quadstore related classes and interfaces. Its purpose is to provide a foundation to built a store implementation on.
 
-# Content 
-
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 
 ## StoreInterface
@@ -30,6 +28,7 @@ Returns a list of all available graph URIs of the store. It also can include acc
 Adds multiple Statements to (default-) graph. 
 
 *Parameter*:
+
 - **statements**: StatementList
   - *statements* must contain Statement instances.
   - Statement instances must be concrete- and not pattern-statements, such as ?s ?p ?o. 
