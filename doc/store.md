@@ -120,3 +120,22 @@ Get information about the store and its features.
 *Parameter*: none
 
 *Return value*: Array which contains information about the store and its features.
+
+#### query
+
+This method sends a SPARQL query to the store.
+
+*Parameter*:
+
+- **query**: string
+  - The SPARQL query to send to the store.
+
+- **options**: array (optional, standard is empty array, e.g. array())
+  - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
+
+*Return value*: Returns result of the query. Depending on the query type, it returns either an instance of \Saft\Sparql\ResultSet, which contains n-tuples or \Saft\Sparql\StatementList, which contains triples.
+
+*Throws*: Exception
+
+- If query is not a valid string.
+- If query is malformed according to SPARQL 1.0 and SPARQL 1.1 standard.
