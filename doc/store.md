@@ -59,9 +59,34 @@ Removes all statements from a (default-) graph which match with given statement.
   - In case you wanna delete Triples (Statement instance contains s, p and o):
     - Set parameter *graphUri* to determine the graph where all the statements will be deleted. If *graphUri* is invalid (empty or not a valid URI or graph is not available), nothing will be deleted.
   - In case you wanna add Quads (Statement instance contains s, p, o and graph):
-    - In a quad the target graph is determined. But if you want to override that behavior, you can set *graphUri* parameter, so all matching statements of that graph will be deleted instead.
+    - In a quad the target graph is determined. But if you want to override that behavior, you must set *graphUri* parameter, so all matching statements of that graph will be deleted instead.
 
 - **options**: array (optional, standard is empty array, e.g. array())
   - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
  
 *Return value*: Returns true, if function performed without errors. In case an error occur, an exception will be thrown.
+
+#### getMatchingStatements
+
+It gets all statements of a given graph which match the following conditions:
+- _statement_'s subject is either equal to the subject of the same statement of the graph or it is null.
+- _statement_'s predicate is either equal to the predicate of the same statement of the graph or it is null.
+- _statement_'s object is either equal to the object of a statement of the graph or it is null.
+
+*Parameter*:
+
+- **statement**: \Saft\Sparql\Statement
+  - It can be either a concrete or pattern-statement.
+  - A concrete statement is considered with subject, predicate and object are defined, e.g. <http://foobar/>.
+  - A pattern statement is considered with at least one of subject, predicate or object is a pattern, e.g. ?s.
+
+- **graphUri**: string (optional, Standard is null)
+  - In case you wanna get Triples (Statement instance contains s, p and o):
+    - Set parameter *graphUri* to determine the graph where you wanna get triple-statements from. If *graphUri* is invalid (empty or not a valid URI or graph is not available), you will get nothing.
+  - In case you wanna add Quads (Statement instance contains s, p, o and graph):
+    - In a quad the target graph is determined. But if you want to override that behavior, you must set *graphUri* parameter, so that you will get all matching statements of that graph.
+
+- **options**: array (optional, standard is empty array, e.g. array())
+  - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
+
+*Return value*: Returns an instance of \Saft\Sparql\StatementList which contains \Saft\Sparql\Statement instances of all matching statements of the given graph.
