@@ -112,3 +112,11 @@ Returns true or false depending on whether or not the statements pattern has any
   - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
 
 *Return value*: Returns true if at least one match was found, false otherwise.
+
+#### getStoreDescription
+
+Get information about the store and its features.
+
+*Parameter*: none
+
+*Return value*: Array which contains information about the store and its features.
