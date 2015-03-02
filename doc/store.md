@@ -28,7 +28,7 @@ Adds multiple Statements to (default-) graph.
 
 *Parameter*:
 
-- **statements**: StatementList
+- **statements**: \Saft\Sparql\StatementList
   - *statements* must contain Statement instances.
   - Statement instances must be concrete- and not pattern-statements, such as ?s ?p ?o. 
   - In case *statements* is empty, nothing will be added.
@@ -90,3 +90,25 @@ It gets all statements of a given graph which match the following conditions:
   - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
 
 *Return value*: Returns an instance of \Saft\Sparql\StatementList which contains \Saft\Sparql\Statement instances of all matching statements of the given graph.
+
+#### hasMatchingStatement
+
+Returns true or false depending on whether or not the statements pattern has any matches in the given graph.
+
+*Parameter*:
+
+- **statement**: \Saft\Sparql\Statement
+  - It can be either a concrete or pattern-statement.
+  - A concrete statement is considered with subject, predicate and object are defined, e.g. <http://foobar/>.
+  - A pattern statement is considered with at least one of subject, predicate or object is a pattern, e.g. ?s.
+
+- **graphUri**: string (optional, Standard is null)
+  - In case you wanna check for Triples (Statement instance contains s, p and o):
+    - Set parameter *graphUri* to determine the graph where to match triple-statements. If *graphUri* is invalid (empty or not a valid URI or graph is not available), no matching will be done.
+  - In case you wanna check for Quads (Statement instance contains s, p, o and graph):
+    - In a quad the target graph is determined. But if you want to override that behavior, you must set *graphUri* parameter, so that it match statements of that graph.
+
+- **options**: array (optional, standard is empty array, e.g. array())
+  - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
+
+*Return value*: Returns true if at least one match was found, false otherwise.
