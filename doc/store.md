@@ -61,7 +61,7 @@ Removes all statements from a (default-) graph which match with given statement.
   - In case you wanna add Quads (Statement instance contains s, p, o and graph):
     - In a quad the target graph is determined. But if you want to override that behavior, you can set *graphUri* parameter, so all matching statements of that graph will be deleted instead.
 
- - **options**: array (optional, standard is empty array, e.g. array())
+- **options**: array (optional, standard is empty array, e.g. array())
   - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
  
 *Return value*: Returns true, if function performed without errors. In case an error occur, an exception will be thrown.
