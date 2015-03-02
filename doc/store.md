@@ -133,7 +133,7 @@ This method sends a SPARQL query to the store.
 - **options**: array (optional, standard is empty array, e.g. array())
   - This parameter contains key-value pairs and should provide additional introductions for the store and/or its adapter(s).
 
-*Return value*: Returns result of the query. Depending on the query type, it returns either an instance of \Saft\Sparql\ResultSet, which contains n-tuples or \Saft\Sparql\StatementList, which contains triples.
+*Return value*: Returns result of the query. Depending on the query type, it returns either an instance of \Saft\Sparql\NTupleList, which contains n-tuples or \Saft\Sparql\TripleList, which contains triples.
 
 *Throws*: Exception
 
