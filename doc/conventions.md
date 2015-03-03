@@ -11,8 +11,13 @@ Within the PHP code we are following the _PHP Standard Recommendation_ (PSR) for
 If you are seeing violations to those standards (e.g. by checking the code with codesniffer) please correct them and commit them in a separate commit containing the words "fix coding standard" or "fix coding style" in the git commit message.
 Such commits should contain pure coding standard resp. coding style changes and should not be mixed with functional changes.
 
-## Nameing conventions
+## Naming conventions
+
+### general names
+
+All packages within the _Saft_ project are prefixed by `Saft`. The name of the package and its subpackages are separated by a dot, e.g. `Saft.store` (the store interface and co) and `Saft.store.virtuoso` (the store implementation using virtuoso backend).
+Theses names are used for the git repositories as github and for the general communication.
 
 ### composer names
 
-The composer packages should have names like `aksw/saft-rdf`. All lower case, and using the dash `-` as word separator. This convention should align with the [suggestions made in the composer documentation](https://getcomposer.org/doc/02-libraries.md#every-project-is-a-package).
+The composer packages should have names like `saft/saft-rdf`. All lower case, and using the dash `-` as word separator. This convention should align with the [suggestions made in the composer documentation](https://getcomposer.org/doc/02-libraries.md#every-project-is-a-package).
