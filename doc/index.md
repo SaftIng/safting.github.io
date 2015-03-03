@@ -15,6 +15,8 @@ For the interface towards the World Wide Web a [REST interface is specified](res
 It allows read and write access to the data served by a Store-Service.
 For server side implementation of Semantic Web applications, e.g. implementing a Store-Service for the World Wide Web, we provide the [Saft PHP Framework](phpframework).
 
+![Structure of the whole Saft Framework](StructureOfSaft.svg)
+
 ## Other Artefacts
 
 The [Logo](logo):
