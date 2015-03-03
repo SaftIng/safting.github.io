@@ -10,39 +10,17 @@ For using Saft you should have a basic understanding of the [Resource Descriptio
 
 ## Structure of Saft
 
-_Saft_ is structured in the _saft.library_ and _saft.skeleton_ with the following components:
+_Saft_ is a framework with the aim to specify components needed for software engineers to easily implement web applications using Semantic Web technology.
+For the interface towards the World Wide Web a [REST interface is specified](restinterface).
+It allows read and write access to the data served by a Store-Service.
+For server side implementation of Semantic Web applications, e.g. implementing a Store-Service for the World Wide Web, we provide the [Saft PHP Framework](phpframework).
 
-### saft.library
-
-* RdfConcepts: provides interfaces for Nodes (Resource, Literal, Blanknode), Statements (Triple and Quad) and Graphs. Additionally the StatementIterator as datastructure for just holding a list of Statements.
-* [saft.store](store): StoreInterface with the implementations AbstractStatementPatternStore and AbstractSparqlStoreAdapter
-* Data Interface with
-    * DataParser for parsing any RDF serialization and returning a StatementInterator
-    * DataSerializer for serializing data to any RDF serialization
-
-### saft.additions
-
-* saft.cache with a memcached and a file back-end
-* saft.querycache
-
-### saft.skeleton
-
-### Other Artefacts
+## Other Artefacts
 
 The [Logo](logo):
 
 [![logo](logo/logo_fira.svg)](logo)
 
-## Getting Started
-
-### Prerequirements
-
-For using _Saft_ your system has to match atleast the following prerequirements.
-
-#### Composer
-
-Composer is a dependency management system for PHP projects.
-You can get it at [https://getcomposer.com/](https://getcomposer.org/).
 
 ## Contribution
 

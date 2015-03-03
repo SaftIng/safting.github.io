@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Conventions
+title: PHP Naming and Coding Conventions
 ---
 
 Within the _Saft_ project we have some conventions which should help us during the development process.
