@@ -5,6 +5,8 @@ title: Triple Operations Store Interface
 
 The light weight REST Store API.
 
+> Maybe we should also consider the [SPARQL 1.1 Graph Store HTTP Protocol](http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321/) but it doesn't seam to cover all of our requirements.
+
 ## explore API
 
 For reading access to the Store
