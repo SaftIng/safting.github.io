@@ -427,3 +427,26 @@ td {
     margin: 0pt;
     padding: 0 0.5em;
 }
+
+/* Buttons */
+a.btn {
+    border: 1px solid #E8E8E8;
+    line-height: 2em;
+    min-width: 10em;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.btn:hover {
+    background-color: #E8E8E8;
+    text-decoration: none;
+}
+
+div.page-footer {
+    text-align: center;
+    border-top: 1px solid #E8E8E8;
+    margin: 5em 0 2em;
+    padding-top: 2em;
+    font-style: italic;
+}

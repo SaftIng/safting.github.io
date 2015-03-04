@@ -10,10 +10,13 @@ For using Saft you should have a basic understanding of the [Resource Descriptio
 
 ## Structure of Saft
 
+<a class="btn" href="restinterface">Saft REST interface</a>
+<a class="btn" href="phpframework">Saft PHP framework</a>
+
 _Saft_ is a framework with the aim to specify components needed for software engineers to easily implement web applications using Semantic Web technology.
 For the interface towards the World Wide Web a [REST interface is specified](restinterface).
 It allows read and write access to the data served by a Store-Service.
-For server side implementation of Semantic Web applications, e.g. implementing a Store-Service for the World Wide Web, we provide the [Saft PHP Framework](phpframework).
+For server side implementation of Semantic Web applications, e.g. implementing a Store-Service for the World Wide Web, we provide the [Saft PHP framework](phpframework).
 
 ![Structure of the whole Saft Framework](StructureOfSaft.svg)
 

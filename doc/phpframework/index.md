@@ -7,7 +7,10 @@ The _Saft PHP Framework_ is structured in the _saft.library_, _saft.skeleton_ an
 
 ## saft.library
 
-* RdfConcepts: provides interfaces for Nodes (Resource, Literal, Blanknode), Statements (Triple and Quad) and Graphs. Additionally the StatementIterator as datastructure for just holding a list of Statements.
+<a class="btn" href="rdf">saft.rdf</a>
+<a class="btn" href="store">saft.store</a>
+
+* [saft.rdf](rdf): provides interfaces for the basic RDF concepts, such as _Node_ (Namednode/URI-Resource, Literal, Blanknode) and _Statement_ (Triple and Quad). Additionally the StatementIterator provides a datastructure for just holding a list of Statements.
 * [saft.store](store): StoreInterface with the implementations AbstractStatementPatternStore and AbstractSparqlStoreAdapter
 * Data Interface with
     * DataParser for parsing any RDF serialization and returning a StatementInterator
