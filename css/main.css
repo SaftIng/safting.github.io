@@ -411,8 +411,19 @@ a:visited { color: #205caa; }
 
 
 /** My additions **/
+table {
+    border-collapse: callapse;
+    border-spacing: 0em;
+}
+
+th {
+    padding: 0 0.5em;
+    margin: 0pt;
+    background-color: #E8E8E8;
+}
+
 td {
     border-top: solid black 1pt;
     margin: 0pt;
-    padding: 0pt;
+    padding: 0 0.5em;
 }
