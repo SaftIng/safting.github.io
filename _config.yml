@@ -11,5 +11,5 @@ github_url: http://github.com/SaftIng
 markdown: kramdown
 permalink: pretty
 
-gems:
-- jekyll-last-modified-at
+#gems:
+#- jekyll-last-modified-at
