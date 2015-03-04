@@ -10,6 +10,14 @@ layout: default
   <article class="post-content">
   {{ content }}
   </article>
-  <hr/>
-  Last modified: {{ page.path | file_date | date_to_long_string }}
+  <div class="page-footer">
+      <p>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="16pt" height="16pt" viewBox="0 0 1792 1792">
+              <!-- source: https://github.com/Pixate/pixate-freestyle-ios/blob/master/tests/IconGallery/fa-pencil.svg -->
+              <path transform="translate(0,1536) scale(1,-1)" fill="black" d="M363 0l91 91l-235 235l-91 -91v-107h128v-128h107zM886 928q0 22 -22 22q-10 0 -17 -7l-542 -542q-7 -7 -7 -17q0 -22 22 -22q10 0 17 7l542 542q7 7 7 17zM832 1120l416 -416l-832 -832h-416v416zM1515 1024q0 -53 -37 -90l-166 -166l-416 416l166 165q36 38 90 38 q53 0 91 -38l235 -234q37 -39 37 -91z"/>
+          </svg>
+        Found a typo? Something is wrong in this documentation? Just fork and edit the <a href="https://github.com/SaftIng/safting.github.io">repository</a>!
+      </p>
+      <p>Last modified: {{ page.last_modified_at | date_to_long_string }}</p>
+  </div>
 </div>

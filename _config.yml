@@ -10,3 +10,6 @@ github_url: http://github.com/SaftIng
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+gems:
+    - jekyll-last-modified-at
