@@ -13,12 +13,20 @@ Such commits should contain pure coding standard resp. coding style changes and 
 
 ## Naming conventions
 
+Naming in _Saft_ is relevant in different contexts. There are the general names, which are used throughout this documentation and for the repos on github. There are names used for the composer packages and we have to handle the namespaces in the PHP-code as well as class names for interface, abstract classes and implementations.
+
 ### general names
 
 All packages within the _Saft_ project are prefixed by `Saft`. The name of the package and its subpackages are separated by a dot, e.g. `Saft.store` (the store interface and co) and `Saft.store.virtuoso` (the store implementation using virtuoso backend).
 Theses names are used for the git repositories as github and for the general communication.
 
-> **Alternative Proposal** create a flat naming schema here, e.g. `Saft.redland`, because in this case redland implements interfaces from `Saft.store` aswell as `Saft.rdf` and `Saft.data`.
+> **Alternative Proposal** create a flat naming schema here, e.g. `Saft.redland`, because in this case redland implements interfaces from `Saft.store` as well as `Saft.rdf` and `Saft.data`.
+
+> **Alternative Proposal** reflect the namespace scheme here and use `Saft.backend.redland` resp. `Saft.backend.virtuoso`, while one has to look into the packages to see which parts the backend actually is implementing
+
+### composer names
+
+The composer packages have to align with the [suggestions made in the composer documentation](https://getcomposer.org/doc/02-libraries.md#every-project-is-a-package). Thus we can't use our general names. The composer packages should have names like `saft/saft-rdf`. All lower case, and using the dash `-` as word separator (instead of the `.`).
 
 ### PHP namespaces
 
@@ -51,7 +59,3 @@ The later would be harder to be managed on filesystem level.
 ### PHP Interfaces, Abstract Classes and Implementation
 
 _Currently under discussion_
-
-### composer names
-
-The composer packages should have names like `saft/saft-rdf`. All lower case, and using the dash `-` as word separator. This convention should align with the [suggestions made in the composer documentation](https://getcomposer.org/doc/02-libraries.md#every-project-is-a-package).
