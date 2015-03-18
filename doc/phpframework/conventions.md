@@ -18,6 +18,40 @@ Such commits should contain pure coding standard resp. coding style changes and 
 All packages within the _Saft_ project are prefixed by `Saft`. The name of the package and its subpackages are separated by a dot, e.g. `Saft.store` (the store interface and co) and `Saft.store.virtuoso` (the store implementation using virtuoso backend).
 Theses names are used for the git repositories as github and for the general communication.
 
+> **Alternative Proposal** create a flat naming schema here, e.g. `Saft.redland`, because in this case redland implements interfaces from `Saft.store` aswell as `Saft.rdf` and `Saft.data`.
+
+### PHP namespaces
+
+All namespaces in the _Saft_ project start with the PHP-namespace `\Saft\` under this namespace all classes in the subpackages are followed by the subpackage name, e.g `\Saft\Rdf\` (string with an upper case letter).
+
+> For backends this is still under discussion. If you are developing your own backend your are safe if your are putting it under your own namespace. For backend implementations distributed under the `\Saft\` namespace one possibility is to use `\Saft\backend\<name of the implementation>` or if you are only implementing a specific interface `\Saft\<interface>\<name of the implementation>` e.g. `\Saft\Store\Virtuoso`.
+
+* \Saft\
+    * Rdf\
+    * Store\
+    * Data\
+    * Backend\
+        * <Name of the implementation>\
+            * Rdf\
+            * Store\
+            * Data\
+
+vs
+
+* \Saft\
+    * Rdf\
+        * <Name of the implementation>\
+    * Store\
+        * <Name of the implementation>\
+    * Data\
+        * <Name of the implementation>\
+
+The later would be harder to be managed on filesystem level.
+
+### PHP Interfaces, Abstract Classes and Implementation
+
+_Currently under discussion_
+
 ### composer names
 
 The composer packages should have names like `saft/saft-rdf`. All lower case, and using the dash `-` as word separator. This convention should align with the [suggestions made in the composer documentation](https://getcomposer.org/doc/02-libraries.md#every-project-is-a-package).
