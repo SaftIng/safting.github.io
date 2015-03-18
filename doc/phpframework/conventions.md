@@ -39,7 +39,7 @@ All namespaces in the _Saft_ project start with the PHP-namespace `\Saft\` under
     * Store\
     * Data\
     * Backend\
-        * <Name of the implementation>\
+        * _Name of the implementation_\
             * Rdf\
             * Store\
             * Data\
@@ -48,11 +48,11 @@ vs
 
 * \Saft\
     * Rdf\
-        * <Name of the implementation>\
+        * _Name of the implementation_\
     * Store\
-        * <Name of the implementation>\
+        * _Name of the implementation_\
     * Data\
-        * <Name of the implementation>\
+        * _Name of the implementation_\
 
 The later would be harder to be managed on filesystem level.
 
