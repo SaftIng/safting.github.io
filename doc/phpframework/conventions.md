@@ -32,29 +32,25 @@ The composer packages have to align with the [suggestions made in the composer d
 
 All namespaces in the _Saft_ project start with the PHP-namespace `\Saft\` under this namespace all classes in the subpackages are followed by the subpackage name, e.g `\Saft\Rdf\` (string with an upper case letter).
 
-> For backends this is still under discussion. If you are developing your own backend your are safe if your are putting it under your own namespace. For backend implementations distributed under the `\Saft\` namespace one possibility is to use `\Saft\backend\<name of the implementation>` or if you are only implementing a specific interface `\Saft\<interface>\<name of the implementation>` e.g. `\Saft\Store\Virtuoso`.
+For backend implementations distributed under the `\Saft\` namespace you should use `\Saft\Backend\<name of the implementation>` e.g. `\Saft\Backend\Virtuoso\…`.
+If you are developing your own backend your are safe if you are putting it under your own namespace.
 
-* \Saft\
-    * Rdf\
-    * Store\
-    * Data\
-    * Backend\
-        * _Name of the implementation_\
-            * Rdf\
-            * Store\
-            * Data\
+The namespace structure should be reflected on the filesystem level.
 
-vs
-
-* \Saft\
-    * Rdf\
-        * _Name of the implementation_\
-    * Store\
-        * _Name of the implementation_\
-    * Data\
-        * _Name of the implementation_\
-
-The later would be harder to be managed on filesystem level.
+* `\Saft\`
+    * `Rdf\`
+    * `Store\`
+    * `Data\`
+    * `Sparql\`
+    * `Cache\`
+    * `QueryCache\`
+    * `Backend\`
+        * _Name of the implementation_`\`
+            * `Rdf\`
+            * `Store\`
+            * `Data\`
+            * _Custom Subpackages_`\`
+            * …
 
 ### PHP Interfaces, Abstract Classes and Implementation
 
