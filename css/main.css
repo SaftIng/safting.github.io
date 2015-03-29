@@ -9,7 +9,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -407,57 +407,4 @@ a:visited { color: #205caa; }
     width: auto;
     margin: 0 0 15px; }
 
-}
-
-
-/** My additions **/
-/* Table layout */
-table {
-    border-collapse: callapse;
-    border-spacing: 0em;
-}
-
-th {
-    padding: 0 0.5em;
-    margin: 0pt;
-    background-color: #E8E8E8;
-}
-
-td {
-    border-top: solid black 1pt;
-    margin: 0pt;
-    padding: 0 0.5em;
-}
-
-/* Buttons */
-a.btn {
-    white-space: nowrap;
-    border: 1px solid #E8E8E8;
-    line-height: 4em;
-    min-width: 10em;
-    padding: 1em 2em;
-    text-align: center;
-    text-decoration: none;
-}
-
-a.btn:hover {
-    background-color: #E8E8E8;
-    text-decoration: none;
-}
-
-/* Page Footer*/
-
-div.page-footer {
-    text-align: center;
-    border-top: 1px solid #E8E8E8;
-    margin: 5em 0 2em;
-    padding-top: 2em;
-    font-style: italic;
-    line-height: 2em;
-}
-
-/* Images */
-
-.post-content img {
-    max-width: 100%;
 }
