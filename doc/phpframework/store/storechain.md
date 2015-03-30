@@ -25,6 +25,7 @@ In the end it depends on your use case which parts you wanna put in the chain. F
 
 ![tree](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-trees.svg)
 
+<br/>
 
 ## Technical details
 
@@ -39,6 +40,25 @@ Now will follow a technical introduction about how the current implementation wo
 This image illustrates the basic structure of a store chain. It consists of different parts, each provides unique functionalities. Each part has a successor and the communication flow usually works calling a successor function and compute its result.
 
 The store chain saves references of all its parts. But each part only knows his successor. 
+
+### Successor handling
+
+Each part has to handle its successor. For that, it has to provide the following functions:
+
+- **setChainSuccessor**([StoreInterface](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/StoreInterface.php) $successor) - Its purpose is to save the reference for a given instance which implements [StoreInterface](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/StoreInterface.php). The given instance has to be setup *before* it will be passed to.
+ 
+Each part of the store chain at least has to implement [StoreInterface](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/StoreInterface.php). The following functions have to support successor-calls:
+
+- addStatements
+- deleteMatchingStatements
+- getMatchingStatements
+- getStoreDescription
+- hasMatchingStatements
+- query
+
+As you see in the picture above, each function either gets a SPARQL query or statement as parameter, primarly. Yes, there are other parameters beside that, but this is the relevant one. 
+
+When a part of the store chain calls its successor means, that it calls the same method which was called by himself. For instance, if you called the query method of Query Cache part and Virtuoso Store is its successor, it has to call his query method with the same parameter. Furthermore, each part *has* to return its own result and not the result of its successor. If the part has no active functionality in the method, it just can forward the result which came from its successor. Thats the case by Query Cache's addStatements method; it has no real effect on the store, so it either forwards the result from its successor or throws an exception, if no successor is available.
 
 ### Result types
 
