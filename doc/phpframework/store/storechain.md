@@ -45,7 +45,7 @@ The store chain saves references of all its parts. But each part only knows his 
 
 Each part has to handle its successor. For that, it has to provide the following functions:
 
-- **setChainSuccessor**([StoreInterface](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/StoreInterface.php) $successor) - Its purpose is to save the reference for a given instance which implements [StoreInterface](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/StoreInterface.php). The given instance has to be setup *before* it will be passed to.
+- **setChainSuccessor** - Its purpose is to save the reference for a given instance which implements [StoreInterface](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/StoreInterface.php). The given instance has to be setup *before* it will be passed to.
  
 Each part of the store chain at least has to implement [StoreInterface](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/StoreInterface.php). The following functions have to support successor-calls:
 
