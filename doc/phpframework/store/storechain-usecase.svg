@@ -9,12 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="637"
+   height="270"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="store-chain-usecase.svg">
+   sodipodi:docname="store-chain-usecase.svg"
+   inkscape:export-filename="/home/k00ni/Documents/safting.github.io/doc/phpframework/store/store-chain-usecase.png"
+   inkscape:export-xdpi="101.19"
+   inkscape:export-ydpi="101.19">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="439.98135"
-     inkscape:cy="865.43359"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="502.81294"
+     inkscape:cy="197.89316"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -34,7 +37,8 @@
      inkscape:window-height="716"
      inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     width="637px" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -50,67 +54,68 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-782.36217)">
     <rect
        style="fill:#c1ccdf;fill-opacity:1;stroke:none"
        id="rect2985"
        width="179.80714"
        height="42.426407"
-       x="51.964493"
-       y="199.93578" />
+       x="0"
+       y="875.82379" />
     <rect
        style="fill:#c1ccdf;fill-opacity:1;stroke:none"
        id="rect2985-6"
        width="161.6244"
        height="42.426407"
-       x="286.76151"
-       y="199.93578" />
+       x="234.797"
+       y="875.82379" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="67.116768"
-       y="229.03218"
+       x="15.152275"
+       y="904.92023"
        id="text3773"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3775"
-         x="67.116768"
-         y="229.03218"
+         x="15.152275"
+         y="904.92023"
          style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Access Control</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="301.93268"
-       y="228.21603"
+       x="249.96817"
+       y="904.10406"
        id="text3773-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3775-2"
-         x="301.93268"
-         y="228.21603"
+         x="249.96817"
+         y="904.10406"
          style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Query Cache</tspan></text>
     <rect
        style="fill:#c1ccdf;fill-opacity:1;stroke:none"
        id="rect2985-6-5"
        width="173.74623"
        height="42.426407"
-       x="503.77243"
-       y="199.93578" />
+       x="451.80792"
+       y="875.82379" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="517.51501"
-       y="227.35941"
+       x="465.55054"
+       y="903.24744"
        id="text3773-6-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3775-2-7"
-         x="517.51501"
-         y="227.35941"
+         x="465.55054"
+         y="903.24744"
          style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Virtuoso Store</tspan></text>
     <g
        id="g3846"
-       transform="matrix(0.59322131,0,0,0.59322131,143.24445,29.071425)">
+       transform="matrix(0.59322131,0,0,0.59322131,91.279958,704.95944)">
       <rect
          y="329.09296"
          x="163.64471"
@@ -127,7 +132,7 @@
     </g>
     <g
        id="g3846-9"
-       transform="matrix(0.59322131,0,0,0.59322131,361.37879,34.689319)">
+       transform="matrix(0.59322131,0,0,0.59322131,309.4143,710.57733)">
       <rect
          y="329.09296"
          x="163.64471"
@@ -145,102 +150,102 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="287.80783"
-       y="275.25876"
+       x="235.84332"
+       y="951.14679"
        id="text3773-6-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3775-2-9"
-         x="287.80783"
-         y="275.25876"
+         x="235.84332"
+         y="951.14679"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Caches queries and serve</tspan><tspan
          sodipodi:role="line"
-         x="287.80783"
-         y="295.25876"
+         x="235.84332"
+         y="971.14679"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3895">either fresh results from</tspan><tspan
          sodipodi:role="line"
-         x="287.80783"
-         y="315.25876"
+         x="235.84332"
+         y="991.14679"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3897">Virtuoso Store or cached</tspan><tspan
          sodipodi:role="line"
-         x="287.80783"
-         y="335.25876"
+         x="235.84332"
+         y="1011.1468"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3899">one.</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="52.143383"
-       y="273.46619"
+       x="0.17889023"
+       y="949.35419"
        id="text3773-6-6-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="52.143383"
-         y="273.46619"
+         x="0.17889023"
+         y="949.35419"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3899-7">Checks if the given query</tspan><tspan
          sodipodi:role="line"
-         x="52.143383"
-         y="293.46619"
+         x="0.17889023"
+         y="969.35419"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3942">is allowed to be executed,</tspan><tspan
          sodipodi:role="line"
-         x="52.143383"
-         y="313.46619"
+         x="0.17889023"
+         y="989.35419"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3952">for instance, if the user </tspan><tspan
          sodipodi:role="line"
-         x="52.143383"
-         y="333.46619"
+         x="0.17889023"
+         y="1009.3542"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3954">has the rights to execute </tspan><tspan
          sodipodi:role="line"
-         x="52.143383"
-         y="353.46619"
+         x="0.17889023"
+         y="1029.3541"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3956">an ASK query in the given </tspan><tspan
          sodipodi:role="line"
-         x="52.143383"
-         y="373.46619"
+         x="0.17889023"
+         y="1049.3541"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3968">graph.</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="503.57196"
-       y="274.18048"
+       x="451.60748"
+       y="950.06848"
        id="text3773-6-6-03"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="503.57196"
-         y="274.18048"
+         x="451.60748"
+         y="950.06848"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan3899-9">Provides access to a </tspan><tspan
          sodipodi:role="line"
-         x="503.57196"
-         y="294.18048"
+         x="451.60748"
+         y="970.06848"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan4009">Virtuoso Server instance.</tspan><tspan
          sodipodi:role="line"
-         x="503.57196"
-         y="314.18048"
+         x="451.60748"
+         y="990.06848"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan4011">It forwards queries and </tspan><tspan
          sodipodi:role="line"
-         x="503.57196"
-         y="334.18048"
+         x="451.60748"
+         y="1010.0685"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan4013">compute the result of the</tspan><tspan
          sodipodi:role="line"
-         x="503.57196"
-         y="354.18048"
+         x="451.60748"
+         y="1030.0684"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
          id="tspan4015">store (enriching, ...)</tspan></text>
     <g
        id="g3846-1"
-       transform="matrix(0,0.59322131,-0.59322131,0,337.56518,54.080167)">
+       transform="matrix(0,0.59322131,-0.59322131,0,285.60069,729.96818)">
       <rect
          y="329.09296"
          x="163.64471"
@@ -258,18 +263,18 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="72.440018"
-       y="131.44748"
+       x="20.475525"
+       y="807.33551"
        id="text3773-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3775-0"
-         x="72.440018"
-         y="131.44748"
+         x="20.475525"
+         y="807.33551"
          style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">SPARQL Query</tspan></text>
     <g
        id="g4142"
-       transform="translate(36.365492,7.0710678)">
+       transform="translate(-15.599002,682.95908)">
       <path
          transform="translate(165.012,2.0203051)"
          d="m 444.28572,124.86218 c 0,3.35316 -6.07613,6.07143 -13.57143,6.07143 -7.49529,0 -13.57142,-2.71827 -13.57142,-6.07143 0,-3.35315 6.07613,-6.07143 13.57142,-6.07143 7.4953,0 13.57143,2.71828 13.57143,6.07143 z"
@@ -313,7 +318,7 @@
     </g>
     <g
        id="g3846-1-2"
-       transform="matrix(0,-0.59322131,0.59322131,0,398.42482,281.58741)">
+       transform="matrix(0,-0.59322131,0.59322131,0,346.46033,957.47542)">
       <rect
          y="329.09296"
          x="163.64471"
@@ -331,18 +336,18 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Sans"
-       x="541.20911"
-       y="131.78329"
+       x="489.24463"
+       y="807.67133"
        id="text3773-5-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3775-0-8"
-         x="541.20911"
-         y="131.78329"
+         x="489.24463"
+         y="807.67133"
          style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Store</tspan></text>
     <g
        id="g3846-9-9"
-       transform="matrix(-0.59322131,0,0,-0.30704247,592.93117,315.68727)"
+       transform="matrix(-0.59322131,0,0,-0.30704247,540.96668,991.57528)"
        style="fill:#ff9955">
       <rect
          y="329.09296"
@@ -360,7 +365,7 @@
     </g>
     <g
        id="g3846-9-9-4"
-       transform="matrix(-0.59322131,0,0,-0.30704247,375.2463,316.40467)"
+       transform="matrix(-0.59322131,0,0,-0.30704247,323.28181,992.29268)"
        style="fill:#ff9955">
       <rect
          y="329.09296"
@@ -378,7 +383,7 @@
     </g>
     <g
        id="g3846-9-9-4-4"
-       transform="matrix(0,-0.59322131,0.30704247,0,54.316862,286.63817)"
+       transform="matrix(0,-0.59322131,0.30704247,0,2.3523687,962.52618)"
        style="fill:#ff9955">
       <rect
          y="329.09296"
@@ -396,7 +401,7 @@
     </g>
     <g
        id="g3846-9-9-4-6"
-       transform="matrix(0,0.59322131,-0.30704247,0,682.08434,50.824323)"
+       transform="matrix(0,0.59322131,-0.30704247,0,630.11985,726.71233)"
        style="fill:#ff9955">
       <rect
          y="329.09296"
