@@ -66,3 +66,14 @@ div.page-footer {
 .post-content img {
     max-width: 100%;
 }
+
+.site-title img {
+    max-height: 30px;
+}
+
+
+.site-title,
+.site-title:hover,
+.site-title:visited {
+  line-height: 60px;
+}

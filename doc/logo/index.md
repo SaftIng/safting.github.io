@@ -16,20 +16,10 @@ The _Saft_ contains a glass of juice (German: “Saft”) with an altering flavo
 
 ## Examples
 
-![logo with Fira Sans](logo_fira.svg)
-![logo with Fira Sans and intersected text](logo_fira_intersect.svg)
+![logo with Open Sans in portrait orientation](logo_portrait.svg)
+![logo with Open Sans in landscape orientation](logo_wide.svg)
 
-The logo with the project name and flavor in [Fira Sans](https://en.wikipedia.org/wiki/Fira_Sans), once with freestanding flavor and once with the flavor text intersected with the project name.
-
-![logo with Open Sans](logo_open.svg)
-![logo with Open Sans and intersected text](logo_open_intersect.svg)
-
-The logo with the project name and flavor in [Open Sans](https://en.wikipedia.org/wiki/Open_Sans), once with freestanding flavor and once with the flavor text intersected with the project name.
-
-
-![another variant of the logo](logo.svg)
-
-Another variant of the logo.
+The logo with the project name and flavor in [Open Sans](https://en.wikipedia.org/wiki/Open_Sans).
 
 ## Source of the logo parts and license
 

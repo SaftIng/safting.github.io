@@ -24,7 +24,7 @@ For server side implementation of Semantic Web applications, e.g. implementing a
 
 The [Logo](logo):
 
-[![logo](logo/logo_fira.svg)](logo)
+[![logo](logo/logo_portrait.svg)](logo)
 
 
 ## Contribution
