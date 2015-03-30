@@ -131,23 +131,6 @@
     <text
        xml:space="preserve"
        style="font-size:11.51853848px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="130.42581"
-       y="974.64288"
-       id="text3061-7-7"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3063-1-6"
-         x="130.42581"
-         y="974.64288"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">SPARQL </tspan><tspan
-         sodipodi:role="line"
-         x="130.42581"
-         y="989.04108"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-         id="tspan3863">Query</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:11.51853848px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="244.80049"
        y="983.19257"
        id="text3061-7-7-5"
@@ -208,20 +191,25 @@
     <text
        xml:space="preserve"
        style="font-size:11.51853848px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="126.94335"
-       y="867.71381"
+       x="116.22906"
+       y="856.28522"
        id="text3061-7-7-56"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3063-1-6-4"
-         x="126.94335"
-         y="867.71381"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">SPARQL </tspan><tspan
+         x="116.22906"
+         y="856.28522"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu" /><tspan
          sodipodi:role="line"
-         x="126.94335"
-         y="882.112"
+         x="116.22906"
+         y="870.68341"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-         id="tspan3863-6">Query</tspan></text>
+         id="tspan3863-6">Query / </tspan><tspan
+         sodipodi:role="line"
+         x="116.22906"
+         y="885.08154"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         id="tspan3019">Statement</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:11.51853848px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -276,5 +264,27 @@
          y="942.33099"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Bold"
          id="tspan3058">Chain</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.51853848px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="115.82678"
+       y="961.61664"
+       id="text3061-7-7-56-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3063-1-6-4-8"
+         x="115.82678"
+         y="961.61664"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu" /><tspan
+         sodipodi:role="line"
+         x="115.82678"
+         y="976.01483"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         id="tspan3863-6-6">Query / </tspan><tspan
+         sodipodi:role="line"
+         x="115.82678"
+         y="990.41296"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         id="tspan3019-8">Statement</tspan></text>
   </g>
 </svg>
