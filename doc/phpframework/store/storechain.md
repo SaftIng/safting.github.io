@@ -9,7 +9,7 @@ This page gives you an overview what we understand under Store chaining and why 
 
 ## Introduction
 
-![usecase](https://cdn.rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-usecase.svg)
+![usecase](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-usecase.svg)
 
 <br/>
 
@@ -23,4 +23,39 @@ The first part in the picture is the access control part. It basically checks if
 
 In the end it depends on your use case which parts you wanna put in the chain. For instance, if your application is the only one working directly on the graph, you may not need access control. Saft's implemenation allows you to create your own chains. It also supports the creation of chain-tree's, because a store chain instance can also be part in another store chain. Please see the following illustration.
 
-![usecase](https://cdn.rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-trees.svg)
+![tree](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-trees.svg)
+
+
+## Technical details
+
+Now will follow a technical introduction about how the current implementation works. Please have a look at the following picture:
+
+<br/>
+
+![part interaction](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-partsinteraction.svg)
+
+<br/>
+
+This image illustrates the basic structure of a store chain. It consists of different parts, each provides unique functionalities. Each part has a successor and the communication flow usually works calling a successor function and compute its result.
+
+The store chain saves references of all its parts. But each part only knows his successor. 
+
+### Result types
+
+Each successor has to return a result, even if an exception appears. In this way, there is only one communication channel and no bypassing information. 
+
+#### StatementIterator
+
+A [statement iterator](https://github.com/SaftIng/Saft/blob/master/src/Saft/Rdf/AbstractStatementIterator.php) provides access to a list of Statements. It will be used for statement-oriented methods, such as getMatchingStatements.
+
+#### ResultSet
+
+The [resultset](https://github.com/SaftIng/Saft/blob/master/src/Saft/Sparql/ResultSet.php) will be used for all non-statement lists. They usually belonging to non-statement-oriented methods, such as query.
+
+#### ResultValue
+
+[This](https://github.com/SaftIng/Saft/blob/master/src/Saft/Sparql/ResultValue.php) type of result will be used in cases where only a simply value will be returned, for instance to answer an ASK-query.
+
+#### ResultError
+
+In case something went wrong, for instance the query was malformed, the request has to be quit with an error. But no exception will be thrown, as usually, an instance of [ResultError](https://github.com/SaftIng/Saft/blob/master/src/Saft/Sparql/ResultError.php) will be returned. It contains all information neccessary to handle the error.
