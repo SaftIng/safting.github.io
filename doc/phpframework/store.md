@@ -11,7 +11,7 @@ Package _saft.store_ consists of Triple- and Quadstore related classes and inter
 
 It describes, which methods a store implementation has to provide. We propose to implement it in other languages if you need a store implementation, to have the best compatibility between different implementations. 
 
-Documentation [here](storeinterface).
+Documentation [here](storeinterface.md).
 
 
 
