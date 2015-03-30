@@ -1,3 +1,8 @@
+---
+layout: doc
+title: Store Interface
+---
+
 # StoreInterface
 
 The _StoreInterface_ describes, which methods a store implementation has to provide. We propose to implement it in other languages if you need a store implementation, to have the best compatibility between different implementations.
