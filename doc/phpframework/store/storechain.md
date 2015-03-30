@@ -9,7 +9,7 @@ This page gives you an overview what we understand under Store chaining and why 
 
 ## Introduction
 
-![usecase](https://cdn.rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-usecase.svg)
+![usecase](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-usecase.svg)
 
 <br/>
 
@@ -23,7 +23,7 @@ The first part in the picture is the access control part. It basically checks if
 
 In the end it depends on your use case which parts you wanna put in the chain. For instance, if your application is the only one working directly on the graph, you may not need access control. Saft's implemenation allows you to create your own chains. It also supports the creation of chain-tree's, because a store chain instance can also be part in another store chain. Please see the following illustration.
 
-![tree](https://cdn.rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-trees.svg)
+![tree](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-trees.svg)
 
 
 ## Technical details
@@ -32,7 +32,7 @@ Now will follow a technical introduction about how the current implementation wo
 
 <br/>
 
-![part interaction](https://cdn.rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-partsinteraction.svg)
+![part interaction](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/store/storechain-partsinteraction.svg)
 
 <br/>
 
