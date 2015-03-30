@@ -58,7 +58,7 @@ Each part of the store chain at least has to implement [StoreInterface](https://
 
 As you see in the picture above, each function either gets a SPARQL query or statement as parameter, primarly. Yes, there are other parameters beside that, but this is the relevant one. 
 
-When a part of the store chain calls its successor means, that it calls the same method which was called by himself. For instance, if you called the query method of Query Cache part and Virtuoso Store is its successor, it has to call his query method with the same parameter. Furthermore, each part *has* to return its own result and not the result of its successor. If the part has no active functionality in the method, it just can forward the result which came from its successor. Thats the case by Query Cache's addStatements method; it has no real effect on the store, so it either forwards the result from its successor or throws an exception, if no successor is available.
+When a part of the store chain calls its successor, that means, that it calls the same method which was called by him. For instance, if you called the query method of Query Cache part and Virtuoso Store is its successor, it has to call his query method with the same parameter. Furthermore, each part *has* to return its own result and not the result of its successor. If the part has no active functionality in the method, it just can forward the result which came from its successor. Thats the case by Query Cache's addStatements method; it has no real effect on the store, so it either forwards the result from its successor or throws an exception, if no successor is available.
 
 ### Result types
 
