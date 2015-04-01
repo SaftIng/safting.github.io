@@ -4,6 +4,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6,
+.subtitle,
 .post-header h1,
 .post-content h1,
 .post-content h2,
@@ -76,4 +77,28 @@ div.page-footer {
 .site-title:hover,
 .site-title:visited {
   line-height: 60px;
+}
+
+/* Hero unit */
+
+.hero.tall {
+    padding: 70px 0px;
+    text-align: center;
+    background: #d5ea80 ;
+    /*background: url('../background.svg') no-repeat scroll center center / cover #aad400;*/
+    /*background: url('https://letsencrypt.org/images/3.jpg') no-repeat fixed center center / cover #E1DCD2;*/
+}
+
+.hero.tall h1, .hero.tall div {
+    padding: 10px;
+}
+
+.hero.tall a.btn {
+    border: 0px;
+    background-color: #aad400;
+    color: black;
+}
+
+.hero.tall a.btn:hover {
+    background-color: #90b400;
 }
