@@ -72,7 +72,6 @@ div.page-footer {
     max-height: 30px;
 }
 
-
 .site-title,
 .site-title:hover,
 .site-title:visited {
@@ -84,9 +83,12 @@ div.page-footer {
 .hero.tall {
     padding: 70px 0px;
     text-align: center;
-    background: #d5ea80 ;
-    /*background: url('../background.svg') no-repeat scroll center center / cover #aad400;*/
-    /*background: url('https://letsencrypt.org/images/3.jpg') no-repeat fixed center center / cover #E1DCD2;*/
+    background: #e8f3ba ;
+}
+
+.hero.tall h1 img {
+    width: 100%;
+    max-width: 300px
 }
 
 .hero.tall h1, .hero.tall div {
