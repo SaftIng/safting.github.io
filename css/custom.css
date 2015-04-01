@@ -83,7 +83,6 @@ div.page-footer {
 .hero.tall {
     padding: 70px 0px;
     text-align: center;
-    background: #e8f3ba ;
 }
 
 .hero.tall h1 img {
@@ -95,12 +94,49 @@ div.page-footer {
     padding: 10px;
 }
 
-.hero.tall a.btn {
-    border: 0px;
-    background-color: #aad400;
-    color: black;
+.site-header, .hero.tall {
+  border-top: 5px solid #90b400;
+  border-bottom: 1px solid #90b400;
+  background-color: #e8f3ba;
 }
+
+
+    .hero.tall a.btn {
+        border: 0px;
+        background-color: #aad400;
+        color: black;
+
+        margin-left: 0px;
+    }
 
 .hero.tall a.btn:hover {
     background-color: #90b400;
+}
+
+@media screen and (min-width: 600px) {
+
+    .site-nav .page-link {
+        border: 0px;
+        background-color: #aad400;
+        color: black;
+
+        margin-left: 0px;
+    }
+
+
+
+.site-nav .page-link {
+    white-space: nowrap;
+    border: 1px solid #E8E8E8;
+    line-height: 4em;
+    min-width: 10em;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.site-nav .page-link:hover {
+    background-color: #90b400;
+    text-decoration: none;
+}
 }
