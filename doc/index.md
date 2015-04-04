@@ -20,13 +20,6 @@ For server side implementation of Semantic Web applications, e.g. implementing a
 
 ![Structure of the whole Saft Framework](StructureOfSaft.svg)
 
-## Other Artefacts
-
-The [Logo](logo):
-
-[![logo](logo/logo_portrait.svg)](logo)
-
-
 ## Contribution
 
 ### Conventions
