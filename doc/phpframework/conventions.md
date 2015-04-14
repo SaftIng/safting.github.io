@@ -55,3 +55,10 @@ The namespace structure should be reflected on the filesystem level.
 ### PHP Interfaces, Abstract Classes and Implementation
 
 _Currently under discussion_
+
+If we have a concept (e.g. `Statement`, `Store`) we want to support with _Saft_ we are implementing it as follows:
+The Structure is expressed in an `interface`, method which are common to all or some defined set of implementations of the concept are implemented in an `abstract class`. If we also want to provide some basic implementation of the interface we should try to keep the system requirements as low as possible and only use standard PHP functions.
+
+The `abstract class` should try to make as view assumptions about the implementations and should only communicate with the implemantation via methods, which are implemented by the implementation.
+
+The naming of those items is as follows, using the example of the `Statement`: `interface Statement`, `abstract class AbstractStatement implements Statement` and `class StatementImpl extends AbstractStatement`; or looking at the `Store` it should be `interface Store`, `abstract class AbstractSparqlStore implements Store` vs. `abstract class AbstractTriplePatternStore implements StoreInterface` and e.g. `class ArrayStoreImpl extends AbstractTriplePatternStore`.
