@@ -17,13 +17,15 @@ The _Saft PHP Framework_ is structured in the _saft.library_, _saft.skeleton_ an
     * DataParser for parsing any RDF serialization and returning a StatementInterator
     * DataSerializer for serializing data to any RDF serialization
 
+## saft.backends
+<a class="btn" href="backends">saft.backends</a>
+
+The _Saft.backends_ are actual implementations of the interfaces of _Saft.library_ (e.g. cache, querycache, store adapters and so on) using some special methodology and technology.
+
 ## saft.skeleton
+> Will be contained in some post 0.1 release
 
-
-## saft.additions
-
-* saft.cache with a memcached and a file back-end
-* saft.querycache
+The _Saft.skeleton_ will be a collection of factories and other thing you need to actually build applications with _Saft_.
 
 ## Getting Started
 
