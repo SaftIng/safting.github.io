@@ -12,8 +12,8 @@ In _Saft_ we are using the concept of back-ends which are concrete implementatio
 Back-ends shiped with _Saft_ in the default distribution are:
 
 - Virtuoso: implements the `Store` interface as adapter to OpenLink Virtuoso triple stores ([external requirements](#virtuoso-setup))
-- HttpStore: implements the `Store` interface as adapter to access SPARQL-endpoints over HTTP (external requirements)
-- LocalStore:
+- HttpStore: implements the `Store` interface as adapter to access SPARQL-endpoints over HTTP ([external requirements](#httpstore))
+- LocalStore: implements the `Store` interface for storing RDF on the local filesystem
 - FileCache:
 - MemcacheD: ([external requirements](#MemcacheD))
 - PhpArrayCache:
@@ -26,6 +26,13 @@ Back-ends shiped with _Saft_ in the default distribution are:
 > 2. Setup
 > 3. …
 
+## HttpStore
+
+> TODO
+>
+> 1. Installation
+> 2. Setup
+> 3. …
 
 ## MemcacheD
 
