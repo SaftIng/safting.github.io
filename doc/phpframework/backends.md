@@ -15,7 +15,7 @@ Back-ends shiped with _Saft_ in the default distribution are:
 - HttpStore: implements the `Store` interface as adapter to access SPARQL-endpoints over HTTP ([external requirements](#httpstore))
 - LocalStore: implements the `Store` interface for storing RDF on the local filesystem
 - FileCache:
-- MemcacheD: ([external requirements](#MemcacheD))
+- MemcacheD: ([external requirements](#memcached))
 - PhpArrayCache:
 
 ## Virtuoso Setup
