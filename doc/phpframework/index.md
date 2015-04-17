@@ -41,3 +41,7 @@ For using the _Saft PHP Framework_ your system has to match at least the followi
 
 Composer is a dependency management system for PHP projects.
 You can get it at [https://getcomposer.com/](https://getcomposer.org/).
+
+#### Test Environment
+
+Setup the [test environment and run the tests](test).
