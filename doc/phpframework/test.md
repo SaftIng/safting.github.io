@@ -3,13 +3,11 @@ layout: doc
 title: Test Environment
 ---
 
-# Test Environment
-
 For seting up the test environment you have to
 
 1. install [phpunit](https://phpunit.de/) (it should come with `composer install`)
 2. copy `test-config.yml.dist` to `test-config.yml` in the saft root directory
-3. install all requirements of the [shipped back-ends](backends#shipped-back-endss)
+3. install all requirements of the [shipped back-ends](../backends#shipped-back-ends)
 
 Now you should be able to run the test suite with a simple
 

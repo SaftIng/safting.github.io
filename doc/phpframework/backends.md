@@ -3,8 +3,6 @@ layout: doc
 title: Back-Ends
 ---
 
-# Back-Ends
-
 In _Saft_ we are using the concept of back-ends which are concrete implementations of a selection of interfaces of the _Saft.library_. Usually one back-end groups implementations sharing a certain methodology, technology or library.
 
 ## Shipped Back-Ends

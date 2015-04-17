@@ -3,8 +3,6 @@ layout: doc
 title: Store Chaining
 ---
 
-# Store Chaining
-
 This page gives you an introduction to the concept of _Store Chaining_ and why it is useful.
 The following image depicts a use-case which is described in the introduction and should serve as a motivating use-case for the _Store Chain_ concept.
 
