@@ -55,7 +55,7 @@ Now you have the result in $savedResult, you stored previously. If you call save
 
 ### Update and invalidate existing results
 
-Well, you don't have to think about that (anymore), because QueryCache will handle that for you. You only need to use saveResult
+Well, you don't have to think about that (anymore), because QueryCache will handle that for you. You only need to use saveResult and getResult, much like a simple key-value-pair based cache. 
 
 
 ## Internals
