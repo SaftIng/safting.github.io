@@ -9,6 +9,48 @@ The QueryCache component provides a layer based on our cache infrastructure to s
 
 There is a paper from Michael Martin called [*Improving the performance of semantic web applications with SPARQL query caching*](Link: http://www.informatik.uni-leipzig.de/~auer/publication/caching.pdf) that we used to get an idea how to organize the whole internal structure. The paper describes the principles and a solution using a TripleStore and relational database system.
 
+## Usage
+
+To get an idea what the QueryCache is for, here are a couple of code snippets.
+
+### How to setup
+
+The QueryCache relies on the cache infrastructure located under saft.cache. It is simple key-value-pair based. All information about queries and their parts will be saved using the given cache instance.
+
+```
+// setup a cache instance
+$cache = new Cache( /* ... */ );
+
+// setup QueryCache instance with cache instance
+$queryCache = new QueryCache($cache);
+```
+
+### Save a query result
+
+Saving a query result is very simple, you just need the SPARQL query and the according result. It does not matter where the result is coming from; it does not need to be created by Saft at all. 
+
+Our current caching infrastructure (with MemcacheD and FileCache) can serialize nearly all PHP-structure, no matter if its an array or an object structure.
+
+```
+$query = "SELECT ?s FROM <http://graph/> WHERE {?s ?p ?o.}";
+$queryObject = AbstractQuery::initByQueryString($query);
+
+// The $result variable contains the result of a previous SPARQL query
+$result = ...
+
+// store result for a given query
+$queryCache->saveResult($queryObject, $result);
+```
+
+After calling the saveResult method you can retrieve the result by calling:
+
+```
+$savedResult = $cache->get($query);
+```
+
+Now you have in the unserialized form of the previous result in $savedResult.
+
+
 ## Internals
 
 ### Storage structure
@@ -23,7 +65,7 @@ Each query of the query list points to a query cache container (4). It contains 
 - Query result
 - SPARQL Query itself
 
-As you can see, there is a back-reference from the element of the query cache container to the graph URI and triple pattern, we talked about above.
+As you can see, there is a back-reference from elements of the query cache container to the graph URI and triple pattern, we talked about above.
 
 ## Restrictions
 
