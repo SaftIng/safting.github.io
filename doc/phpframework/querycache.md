@@ -32,23 +32,30 @@ Saving a query result is very simple, you just need the SPARQL query and the acc
 Our current caching infrastructure (with MemcacheD and FileCache) can serialize nearly all PHP-structure, no matter if its an array or an object structure.
 
 ```
-$query = "SELECT ?s FROM <http://graph/> WHERE {?s ?p ?o.}";
-$queryObject = AbstractQuery::initByQueryString($query);
+// Instance of Query
+$query = AbstractQuery::initByQueryString(
+  "SELECT ?s FROM <http://graph/> WHERE {?s ?p ?o.}"
+);
 
 // The $result variable contains the result of a previous SPARQL query
 $result = ...
 
 // store result for a given query
-$queryCache->saveResult($queryObject, $result);
+$queryCache->saveResult($query, $result);
 ```
 
 After calling the saveResult method you can retrieve the result by calling:
 
 ```
-$savedResult = $cache->get($query);
+$savedResult = $queryCache->getResult($query);
 ```
 
-Now you have in the unserialized form of the previous result in $savedResult.
+Now you have the result in $savedResult, you stored previously. If you call saveResult for the same query but with different results, all obsolete information will be removed automatically.
+
+
+### Update and invalidate existing results
+
+Well, you don't have to think about that (anymore), because QueryCache will handle that for you. You only need to use saveResult
 
 
 ## Internals
