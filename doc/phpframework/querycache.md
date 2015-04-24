@@ -15,7 +15,15 @@ There is a paper from Michael Martin called [*Improving the performance of seman
 
 ![part interaction](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/querycache/querycache-overview.svg)
 
-The QueryCache needs a key-value-pair based caching solution. It stores different parts of the query, using their value as keys. Of the given query the graph URIs (1) and triple patterns (2) will be extracted and used. Both have a connection to a query list, which contains SPARQL queries. 
+The QueryCache needs a key-value-pair based caching solution. It stores different parts of the query, using their value as keys. Of the given query the graph URIs (1) and triple patterns (2) will be extracted and used as keys and a list of according queries is the value. The query list contains SPARQL query strings. A graph URI can be part of different SPARQL queries, so it has a connection to each one of them. Same for the triple pattern. 
+
+Each query of the query list points to a query cache container (4). It contains all information neccessary about a certain SPARQL query:
+- Graph URI's
+- Used triple pattern
+- Query result
+- SPARQL Query itself
+
+As you can see, there is a back-reference from the element of the query cache container to the graph URI and triple pattern, we talked about above.
 
 ## Restrictions
 
