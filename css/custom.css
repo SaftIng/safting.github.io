@@ -62,6 +62,24 @@ div.page-footer {
     line-height: 2em;
 }
 
+
+.footer-col-1 {
+  width: 445px; /*fallback*/
+  width: -webkit-calc(58.125% - 10px);
+  width: -moz-calc(58.125% - 10px);
+  width: -o-calc(58.125% - 10px);
+  width: calc(58.125% - 10px);
+  margin-right: 10px
+}
+.footer-col-2 {
+  width: 335px; /*fallback*/
+  width: -webkit-calc(41.875%);
+  width: -moz-calc(41.875%);
+  width: -o-calc(41.875%);
+  width: calc(41.875%);
+  margin-right: 0px
+}
+
 /* Images */
 
 .post-content img {
