@@ -43,3 +43,9 @@ Back-ends shipped with _Saft_ in the default distribution are:
 > 1. Installation
 > 2. Setup
 > 3. …
+
+## Redland
+
+http://packages.ubuntu.com/trusty/php5-librdf
+
+http://librdf.org/docs/php.html
