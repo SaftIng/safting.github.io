@@ -14,7 +14,6 @@ Back-ends shipped with _Saft_ in the default distribution are:
 - LocalStore: implements the `Store` interface for storing RDF on the local filesystem
 - FileCache: implements the `Cache` interfaces
 - MemcacheD: implements the `Cache` interfaces ([external requirements](#memcached))
-- PhpArrayCache: implements the `Cache` interfaces
 
 ## Other Back-Ends
 
