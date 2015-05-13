@@ -22,6 +22,8 @@ Back-ends shipped with _Saft_ in the default distribution are:
 
 ## Virtuoso Setup
 
+Requires the php extensions `odbc` and `pdo_odbc` which are provided by the package `php5-odb` in [debian](https://packages.debian.org/stable/php5-odbc) and [ubuntu](http://packages.ubuntu.com/trusty/php5-odbc)
+
 > TODO
 >
 > 1. Installation
@@ -38,6 +40,8 @@ Back-ends shipped with _Saft_ in the default distribution are:
 
 ## MemcacheD
 
+Requires the php extension `memcached` which is provided by the package `php5-memcached` in [debian](https://packages.debian.org/stable/php5-memcached) and [ubuntu](http://packages.ubuntu.com/trusty/php5-memcached) and the memcached (daemon), which is provided by the package `memcached` in [debian](https://packages.debian.org/stable/memcached) and [ubuntu](http://packages.ubuntu.com/trusty/memcached)
+
 > TODO
 >
 > 1. Installation
@@ -46,6 +50,6 @@ Back-ends shipped with _Saft_ in the default distribution are:
 
 ## Redland
 
-http://packages.ubuntu.com/trusty/php5-librdf
+Requires the php extensions `redland` which is provided by the package `php5-librdf` in [debian](https://packages.debian.org/stable/php5-librdf) and [ubuntu](http://packages.ubuntu.com/trusty/php5-librdf)
 
-http://librdf.org/docs/php.html
+Further information about the redland php bindings are available at: [http://librdf.org/docs/php.html](http://librdf.org/docs/php.html)
