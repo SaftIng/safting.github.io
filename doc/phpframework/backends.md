@@ -12,6 +12,7 @@ Back-ends shipped with _Saft_ in the default distribution are:
 - Virtuoso: implements the `Store` interface as adapter to OpenLink Virtuoso triple stores ([external requirements](#virtuoso-setup))
 - HttpStore: implements the `Store` interface as adapter to access SPARQL-endpoints over HTTP ([external requirements](#httpstore))
 - LocalStore: implements the `Store` interface for storing RDF on the local filesystem
+- ARC2: implements the Store interface for storing RDF data in a MySQL database ([external requirements](#arc2))
 - FileCache: implements the `Cache` interfaces
 - MemcacheD: implements the `Cache` interfaces ([external requirements](#memcached))
 
@@ -30,6 +31,24 @@ Requires the php extensions `odbc` and `pdo_odbc` which are provided by the pack
 > 3. …
 
 ## HttpStore
+
+> TODO
+>
+> 1. Installation
+> 2. Setup
+> 3. …
+
+## ARC2
+
+For using the ARC2 backend you have to have a mysql database running.
+The default credentials which Saft is trying to use are username, password and database name all set to `saft`.
+You can setup mysql accordingly with the following set of mysql commands:
+
+    create user 'saft'@'localhost' identified by 'saft';
+    create database saft;
+    grant all privileges on saft.* to 'saft'@'localhost';
+
+you can execute those commands using the `mysql` commandline tool.
 
 > TODO
 >
