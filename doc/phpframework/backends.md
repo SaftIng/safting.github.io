@@ -7,22 +7,29 @@ In _Saft_ we are using the concept of back-ends which are concrete implementatio
 
 ## Shipped Back-Ends
 
-Back-ends shipped with _Saft_ in the default distribution are:
+The following lists are back-ends shipped with _Saft_ in the default distribution.
 
-- Virtuoso: implements the `Store` interface as adapter to OpenLink Virtuoso triple stores ([external requirements](#virtuoso-setup))
-- HttpStore: implements the `Store` interface as adapter to access SPARQL-endpoints over HTTP ([external requirements](#httpstore))
-- LocalStore: implements the `Store` interface for storing RDF on the local filesystem
-- ARC2: implements the Store interface for storing RDF data in a MySQL database ([external requirements](#arc2))
-- FileCache: implements the `Cache` interfaces
-- MemcacheD: implements the `Cache` interfaces ([external requirements](#memcached))
+### Store Backend-Ends
 
-## Other Back-Ends
+- Virtuoso - Adapter to OpenLink Virtuoso triple stores. ([external requirements](#virtuoso))
+- HttpStore - Adapter to access SPARQL-endpoints over HTTP. ([external requirements](#httpstore))
+- LocalStore - Adapter for storing RDF on the local filesystem.
+- ARC2 - Adapter which utilizes ARC2 for storing RDF data in a MySQL database. ([external requirements](#arc2))
+
+### Cache Backend-Ends
+
+- FileCache - Adapter to store cache entries on the local filesystem.
+- MemcacheD - Adapter to store cache entries in the RAM using MemcacheD daemon. ([external requirements](#memcached))
+
+### Other Backend-Ends
 
 - Redland: implements the _Saft.data_ and _Saft.Rdf_ interfaces
 
-## Virtuoso Setup
+## Virtuoso
 
-Requires the php extensions `odbc` and `pdo_odbc` which are provided by the package `php5-odb` in [debian](https://packages.debian.org/stable/php5-odbc) and [ubuntu](http://packages.ubuntu.com/trusty/php5-odbc)
+### Requirements
+
+* PHP extensions `odbc` and `pdo_odbc` must be installed and loaded. They are provided by the package `php5-odbc` in [debian](https://packages.debian.org/stable/php5-odbc) and [ubuntu](http://packages.ubuntu.com/trusty/php5-odbc)
 
 > TODO
 >
@@ -32,6 +39,10 @@ Requires the php extensions `odbc` and `pdo_odbc` which are provided by the pack
 
 ## HttpStore
 
+### Requirements 
+
+* PHP extension `curl` must be installed and loaded. It is provided by the package `php5-curl`.
+
 > TODO
 >
 > 1. Installation
@@ -40,15 +51,27 @@ Requires the php extensions `odbc` and `pdo_odbc` which are provided by the pack
 
 ## ARC2
 
-For using the ARC2 backend you have to have a mysql database running.
-The default credentials which Saft is trying to use are username, password and database name all set to `saft`.
+Saft supports ARC2 for storing RDF in a MySQL database. 
+
+### Setup
+
+> TODO:
+> add link to examples
+> short description of how to setup
+
+The default access credentials which Saft is trying to use are:
+
+- username: saft
+- password: saft
+- database: saft
+
 You can setup mysql accordingly with the following set of mysql commands:
 
     create user 'saft'@'localhost' identified by 'saft';
     create database saft;
     grant all privileges on saft.* to 'saft'@'localhost';
 
-you can execute those commands using the `mysql` commandline tool.
+you can execute those commands using the `mysql` commandline tool. Or you perhaps you want to use phpMyAdmin to create the user and a database. [Here](https://www.youtube.com/watch?v=lfjzAbaW32c) is a short youtube video how to accomplish that.
 
 > TODO
 >
