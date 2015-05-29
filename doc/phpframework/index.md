@@ -3,7 +3,7 @@ layout: doc
 title: Saft PHP Framework
 ---
 
-The _Saft PHP Framework_ is structured in the _saft.library_, _saft.skeleton_ and _saft.additions_ with the following components:
+The _Saft PHP Framework_ consists of a couple of parts which will be described below.
 
 ## saft.library
 
@@ -28,22 +28,3 @@ The _Saft.backends_ are actual implementations of the interfaces of _Saft.librar
 > Will be contained in some post 0.1 release
 
 The _Saft.skeleton_ will be a collection of factories and other thing you need to actually build applications with _Saft_.
-
-## Getting Started
-
-### Prerequirements
-
-For using the _Saft PHP Framework_ your system has to match at least the following prerequirements.
-
-#### PHP
-
-`php > 5.3.3`
-
-#### Composer
-
-Composer is a dependency management system for PHP projects.
-You can get it at [https://getcomposer.com/](https://getcomposer.org/).
-
-#### Test Environment
-
-Setup the [test environment and run the tests](test).
