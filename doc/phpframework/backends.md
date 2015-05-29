@@ -71,7 +71,7 @@ You can setup mysql accordingly with the following set of mysql commands:
     create database saft;
     grant all privileges on saft.* to 'saft'@'localhost';
 
-you can execute those commands using the `mysql` commandline tool. Or you perhaps you want to use phpMyAdmin to create the user and a database. [Here](https://www.youtube.com/watch?v=lfjzAbaW32c) is a short youtube video how to accomplish that.
+you can execute those commands using the `mysql` commandline tool. Or perhaps you want to use phpMyAdmin to create the user and a database. [Here](https://www.youtube.com/watch?v=lfjzAbaW32c) is a short youtube video how to accomplish that.
 
 > TODO
 >
