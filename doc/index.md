@@ -10,7 +10,7 @@ permalink: /doc/
 
 You have reached the documentation of the Saft project. Here you will find information about the Saft PHP framework itself, the Saft REST interface and how to constribute to the project. If you have a question, dont hesitate to open a [new issue](https://github.com/SaftIng/Saft/issues/new).
 
-# Saft PHP framework
+## Saft PHP framework
 
 <a class="btn" href="phpframework">Saft PHP framework</a>
 
@@ -18,7 +18,7 @@ The Saft PHP Framework consists of the *Saft Library* and the *Saft Skeleton App
 
 ![Structure of the whole Saft Framework](StructureOfSaft.svg)
 
-## Saft REST interface
+### Saft REST interface
 
 <a class="btn" href="restinterface">Saft REST interface</a>
 
