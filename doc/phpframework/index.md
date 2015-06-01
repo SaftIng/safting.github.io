@@ -10,21 +10,58 @@ The _Saft PHP Framework_ consists of:
 - Skeleton (saft.skeleton) - Skeleton application. It contains additional helper classes to speed up developing using Saft library.
 
 
-## Saft library
+## Saft Library
 
-<a class="btn" href="backends">saft.backend</a>
-<a class="btn" href="rdf">saft.rdf</a>
-<a class="btn" href="store">saft.store</a>
-<a class="btn" href="data">saft.data</a>
-<a class="btn" href="querycache">saft.querycache</a>
+The *Saft Library* is structured as components. Here is a short list:
 
-* [Saft.backend](backends) are actual implementations of the interfaces of _Saft.library_ (e.g. cache, querycache, store adapters and so on) using some special methodology and technology.
-* [Saft.rdf](rdf): provides interfaces for the basic RDF concepts, such as _Node_ (Namednode/URI-Resource, Literal, Blanknode) and _Statement_ (Triple and Quad). Additionally the StatementIterator provides a datastructure for just holding a list of Statements.
-* [Saft.store](store): StoreInterface with the implementations AbstractStatementPatternStore and AbstractSparqlStoreAdapter
-* [Saft.data](data): data interface with
-    * DataParser for parsing any RDF serialization and returning a StatementInterator
-    * DataSerializer for serializing data to any RDF serialization
-* [Saft.querycache](querycache): The QueryCache component provides a layer based on our cache infrastructure to store query results and provide them later on.
+<a class="btn" href="backends">Saft.backend</a>
+<a class="btn" href="rdf">Saft.rdf</a>
+<a class="btn" href="store">Saft.store</a>
+<a class="btn" href="data">Saft.data</a>
+<a class="btn" href="querycache">Saft.querycache</a>
+
+### Saft.backend
+
+<a class="btn" href="backends">Documentation</a>
+
+Backends are actual implementations of the interfaces of _Saft.library_ (e.g. cache, querycache, store adapters and so on) using some special methodology and technology.
+
+### Saft.rdf
+
+<a class="btn" href="rdf">Documentation</a>
+
+The RDF component provides interfaces for the basic RDF concepts, such as _Node_ (Namednode/URI-Resource, Literal, Blanknode) and _Statement_ (Triple and Quad). Additionally the StatementIterator provides a datastructure for just holding a list of Statements. It was designed to fit the terminology of the Semantic Web.
+
+### Saft.store
+
+<a class="btn" href="store">Documentation</a>
+
+The Store component contains classes and interfaces to provide store/database access. We provide the [Store](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/Store.php) interface, which defines a minimum of methods an adapter has to implement to provide store/database access (data querying and data insert/update/deletion).
+
+To help you to create further adapters, we provide two abstract classes: AbstractTriplePatternStore and AbstractSparqlStore. They already implement basic methods to save you time and work.
+
+#### [AbstractSparqlStore](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/AbstractSparqlStore.php)
+
+Its purpose is to be the basement for adapters which interfact with a triple/quad store with a SPARQL engine.
+
+#### [AbstractTriplePatternStore](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/AbstractTriplePatternStore.php)
+
+If you want to write an adapter for a store, which does not provide a SPARQL engine, you can use that abstract class. That could be the case if you, for instance, want to store triples on the file system.
+
+### Saft.data
+
+<a class="btn" href="data">Documentation</a>
+
+The Data component provides parser and serializer interfaces and classes:
+
+- DataParser for parsing any RDF serialization and returning a StatementInterator
+- DataSerializer for serializing data to any RDF serialization
+
+### Saft.querycache
+
+<a class="btn" href="querycache">Documentation</a>
+
+The QueryCache component provides a layer based on our cache infrastructure to store query results and provide them later on.
 
 ## Saft Skeleton Application (saft.skeleton)
 > Will be contained in some post 0.1 release
