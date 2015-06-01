@@ -4,6 +4,7 @@ title: Saft PHP Framework
 ---
 
 The _Saft PHP Framework_ consists of:
+
 - Saft - Library. Here are all important classes of Saft located. It consists of different part which will be described below.
 
 - Skeleton (saft.skeleton) - Skeleton application. It contains additional helper classes to speed up developing using Saft library.
