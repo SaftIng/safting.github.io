@@ -61,4 +61,14 @@ The Structure is expressed in an `interface`, method which are common to all or 
 
 The `abstract class` should try to make as view assumptions about the implementations and should only communicate with the implemantation via methods, which are implemented by the implementation.
 
-The naming of those items is as follows, using the example of the `Statement`: `interface Statement`, `abstract class AbstractStatement implements Statement` and `class StatementImpl extends AbstractStatement`; or looking at the `Store` it should be `interface Store`, `abstract class AbstractSparqlStore implements Store` vs. `abstract class AbstractTriplePatternStore implements StoreInterface` and e.g. `class ArrayStoreImpl extends AbstractTriplePatternStore`.
+The naming of those items is as follows, using the example of the 
+
+- `Statement`: `interface Statement`, 
+- `abstract class AbstractStatement implements Statement` and 
+- `class StatementImpl extends AbstractStatement`.
+
+Or looking at the `Store` it should be 
+
+- `interface Store`, 
+- `abstract class AbstractSparqlStore implements Store` vs. `abstract class AbstractTriplePatternStore implements StoreInterface` and e.g. 
+- `class ArrayStoreImpl extends AbstractTriplePatternStore`.
