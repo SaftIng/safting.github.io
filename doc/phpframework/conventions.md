@@ -75,7 +75,7 @@ Or looking at the `Store` it should be
 
 ## Test Cases
 
-If you write test cases for Saft, please following these conventions:
+If you write test cases for Saft, please follow these conventions:
 
 - TestCases: Group test functions together, if they test the same function
 - TestCases: Alphabetical order of groups of test functions.
