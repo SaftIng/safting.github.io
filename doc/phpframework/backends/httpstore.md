@@ -22,6 +22,7 @@ Only Virtuoso 6.1.8 and higher supports SPARQL UPDATE queries via HTTP. Have no 
 #### 2. User account for WebDAV
 
 Create a new user via the [Conductor](http://localhost:8890/conductor/) with the following configuration:
+
 - Set username and password (remember it and set it in the test-config.yml in your Saft root folder) 
 - **User Enabled** must be checked
 - **User Type:** SQL/ODBC and WebDAV
