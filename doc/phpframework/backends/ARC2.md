@@ -11,6 +11,9 @@ This backend provides a Store adapter which utilizes the PHP library [ARC2](http
 
 Currently, Saft supports ARC2 for storing RDF in a MySQL database. 
 
+ARC2 provides good documentation, if you need further information: [https://github.com/semsol/arc2/wiki](https://github.com/semsol/arc2/wiki)
+
+
 ## Installation
 
 Basically, you dont have to anything to setup a database to use ARC2. It is configured in a way to use the given information and to setup everything for you. It needs a database name and access information, if you want, you can also set the host and table-prefix. 
