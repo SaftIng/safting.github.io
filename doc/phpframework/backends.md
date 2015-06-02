@@ -11,13 +11,13 @@ The following list contains back-end shipped with _Saft_ in the default distribu
 
 ### Virtuoso
 
-<a class="btn" href="backends/virtuoso">More information</a>
+<a class="btn" href="virtuoso">More information</a>
 
 Store adapter to [OpenLink's Virtuoso Universal Server](http://virtuoso.openlinksw.com/). It provides triple/quad store functionality as well as RDBMS functionality.
 
 ### HttpStore
 
-<a class="btn" href="backends/httpstore">More information</a>
+<a class="btn" href="httpstore">More information</a>
 
 Store adapter to access SPARQL-endpoints over HTTP. 
 
