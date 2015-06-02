@@ -60,6 +60,8 @@ Basically there are 3 rights:
 
 This method is neccessary for the HttpStoreTest, because it marks tests skipped, if the one of the 3 rights is false. Otherwise some of the StoreAbstractTest tests would just fail. 
 
+**Attention:** The current implementation tries to create empty graphs. If your current user is only be able to create but not to delete graphs, you can end up with a couple of empty graphs. It will run in same *problem* for the test of triple creation/deletion. There is no better mechanism to solve that task. So please keep that in mind, if you use that function. That said, it is not used by default.
+
 Related issues:
 
 - [https://github.com/SaftIng/Saft/issues/30](https://github.com/SaftIng/Saft/issues/30)
