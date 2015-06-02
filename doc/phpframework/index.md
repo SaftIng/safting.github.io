@@ -24,7 +24,7 @@ The *Saft Library* is structured as components. Here is a short list:
 
 <a class="btn" href="backends">Documentation</a>
 
-Backends are actual implementations of the interfaces of _Saft.library_ (e.g. cache, querycache, store adapters and so on) using some special methodology and technology.
+Backends are actual implementations of the interfaces of _Saft.library_, for instance a cache or store adapter. Some may provide different kinds of implementations.
 
 ### Saft.rdf
 
