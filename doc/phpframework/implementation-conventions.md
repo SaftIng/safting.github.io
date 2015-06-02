@@ -13,7 +13,8 @@ That convention affects all implementations of a Saft interface. If you pass a p
 
 Here is some example code:
 
-```class Foo 
+```
+class Foo 
 {
     private $bar;
    
