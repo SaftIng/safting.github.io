@@ -16,11 +16,11 @@ Here is some example code:
 ```php
 class Foo 
 {
-  private $bar;
-  public function __construct($bar)
-  {
-    $this->bar = $bar;
-  }
+private $bar;
+public function __construct($bar)
+{
+$this->bar = $bar;
+}
 }
 ```
 
