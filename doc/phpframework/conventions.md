@@ -72,3 +72,13 @@ Or looking at the `Store` it should be
 - `interface Store`, 
 - `abstract class AbstractSparqlStore implements Store` vs. `abstract class AbstractTriplePatternStore implements StoreInterface` and e.g. 
 - `class ArrayStoreImpl extends AbstractTriplePatternStore`.
+
+## Test Cases
+
+If you write test cases for Saft, please following these conventions:
+
+- TestCases: Group test functions together, if they test the same function
+- TestCases: Alphabetical order of groups of test functions.
+- Alphabetical order for use-statements.
+
+These improve readability and make it easier to find tests for a certain method. If the method are spread out over the whole document, its very hard to keep track, what cases for the method were tested and which not. That will be even more difficult, if that is not your code.
