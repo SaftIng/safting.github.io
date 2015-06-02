@@ -11,9 +11,9 @@ The purpose of the first release is to lay the ground for further development. W
 
 In a nutshell:
 
-- a first proposal for the APIs of:
+- a first proposal for the APIs of (abstract class and interfaces):
     - _Saft.rdf_
     - _Saft.data_
     - _Saft.store_
-- 100% tests coverage
-- 100% api documentation
+- 90%+ tests coverage
+- 90%+ API documentation
