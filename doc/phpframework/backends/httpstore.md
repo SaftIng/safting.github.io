@@ -62,4 +62,4 @@ This method is neccessary for the HttpStoreTest, because it marks tests skipped,
 
 Related issues:
 
-- https://github.com/SaftIng/Saft/issues/30
+- [https://github.com/SaftIng/Saft/issues/30](https://github.com/SaftIng/Saft/issues/30)
