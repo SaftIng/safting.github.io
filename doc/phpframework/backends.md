@@ -11,55 +11,19 @@ The following list contains back-end shipped with _Saft_ in the default distribu
 
 ### Virtuoso
 
-Store adapter to OpenLink Virtuoso triple stores.
+<a class="btn" href="/backends/virtuoso">More information</a>
+
+Store adapter to [OpenLink's Virtuoso Universal Server](http://virtuoso.openlinksw.com/). It provides triple/quad store functionality as well as RDBMS functionality.
 
 ### HttpStore
 
-<a class="btn" href="rdf">More information</a>
+<a class="btn" href="/backends/httpstore">More information</a>
 
 Store adapter to access SPARQL-endpoints over HTTP. 
 
 ### ARC2
 
 This backend provides a Store adapter which utilizes ARC2 for storing RDF data in a MySQL database. ARC2 itself also provides serializer and parser for a couple of RDF serializations. It is planned to support that too.
-
-### FileCache
-
-Cache adapter to store cache entries on the local filesystem.
-
-### MemcacheD
-
-Cache adapter to store cache entries in the RAM using MemcacheD daemon.
-
-### Redland
-
-Provides data serializer and parser. Implements the _Saft.data_ and _Saft.Rdf_ interfaces.
-
-## Virtuoso
-
-### Requirements
-
-* PHP extensions `odbc` and `pdo_odbc` must be installed and loaded. They are provided by the package `php5-odbc` in [debian](https://packages.debian.org/stable/php5-odbc) and [ubuntu](http://packages.ubuntu.com/trusty/php5-odbc)
-
-> TODO
->
-> 1. Installation
-> 2. Setup
-> 3. …
-
-## HttpStore
-
-### Requirements 
-
-* PHP extension `curl` must be installed and loaded. It is provided by the package `php5-curl`.
-
-> TODO
->
-> 1. Installation
-> 2. Setup
-> 3. …
-
-## ARC2
 
 Saft supports ARC2 for storing RDF in a MySQL database. 
 
@@ -89,17 +53,20 @@ you can execute those commands using the `mysql` commandline tool. Or perhaps yo
 > 2. Setup
 > 3. …
 
-## MemcacheD
+### FileCache
+
+Cache adapter to store cache entries on the local filesystem.
+
+### MemcacheD
+
+Cache adapter to store cache entries in the RAM using MemcacheD daemon. 
 
 Requires the php extension `memcached` which is provided by the package `php5-memcached` in [debian](https://packages.debian.org/stable/php5-memcached) and [ubuntu](http://packages.ubuntu.com/trusty/php5-memcached) and the memcached (daemon), which is provided by the package `memcached` in [debian](https://packages.debian.org/stable/memcached) and [ubuntu](http://packages.ubuntu.com/trusty/memcached)
 
-> TODO
->
-> 1. Installation
-> 2. Setup
-> 3. …
 
-## Redland
+### Redland
+
+Provides data serializer and parser. Implements the _Saft.data_ and _Saft.Rdf_ interfaces.
 
 Requires the php extensions `redland` which is provided by the package `php5-librdf` in [debian](https://packages.debian.org/stable/php5-librdf) and [ubuntu](http://packages.ubuntu.com/trusty/php5-librdf).
 The PHP extension is probably not activated automatically after the installation.
