@@ -23,46 +23,17 @@ Store adapter to access SPARQL-endpoints over HTTP.
 
 ### ARC2
 
+<a class="btn" href="ARC2">More information</a>
+
 This backend provides a Store adapter which utilizes ARC2 for storing RDF data in a MySQL database. ARC2 itself also provides serializer and parser for a couple of RDF serializations. It is planned to support that too.
 
 Saft supports ARC2 for storing RDF in a MySQL database. 
-
-### Setup
-
-> TODO:
-> add link to examples
-> short description of how to setup
-
-The default access credentials which Saft is trying to use are:
-
-- username: saft
-- password: saft
-- database: saft
-
-You can setup mysql accordingly with the following set of mysql commands:
-
-    create user 'saft'@'localhost' identified by 'saft';
-    create database saft;
-    grant all privileges on saft.* to 'saft'@'localhost';
-
-you can execute those commands using the `mysql` commandline tool. Or perhaps you want to use phpMyAdmin to create the user and a database. [Here](https://www.youtube.com/watch?v=lfjzAbaW32c) is a short youtube video how to accomplish that.
-
-> TODO
->
-> 1. Installation
-> 2. Setup
-> 3. …
-
-### FileCache
-
-Cache adapter to store cache entries on the local filesystem.
 
 ### MemcacheD
 
 Cache adapter to store cache entries in the RAM using MemcacheD daemon. 
 
 Requires the php extension `memcached` which is provided by the package `php5-memcached` in [debian](https://packages.debian.org/stable/php5-memcached) and [ubuntu](http://packages.ubuntu.com/trusty/php5-memcached) and the memcached (daemon), which is provided by the package `memcached` in [debian](https://packages.debian.org/stable/memcached) and [ubuntu](http://packages.ubuntu.com/trusty/memcached)
-
 
 ### Redland
 
