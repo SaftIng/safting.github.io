@@ -13,7 +13,7 @@ The following list contains back-end shipped with _Saft_ in the default distribu
 
 <a class="btn" href="virtuoso">More information</a>
 
-Store adapter to [OpenLink's Virtuoso Universal Server](http://virtuoso.openlinksw.com/). It provides triple/quad store functionality as well as RDBMS functionality.
+Store adapter to OpenLink's [Virtuoso Universal Server](http://virtuoso.openlinksw.com/). It provides triple/quad store functionality as well as RDBMS functionality.
 
 ### HttpStore
 
