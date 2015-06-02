@@ -9,13 +9,31 @@ In _Saft_ we are using the concept of back-ends which are concrete implementatio
 
 The following list contains back-end shipped with _Saft_ in the default distribution.
 
-- Virtuoso - Store adapter to OpenLink Virtuoso triple stores. ([external requirements](#virtuoso))
-- HttpStore - Store adapter to access SPARQL-endpoints over HTTP. ([external requirements](#httpstore))
-- LocalStore - Store adapter for storing RDF on the local filesystem.
-- ARC2 - This backend provides a Store adapter which utilizes ARC2 for storing RDF data in a MySQL database. ([external requirements](#arc2)) ARC2 itself also provides serializer and parser for a couple of RDF serializations. It is planned to support that too.
-- FileCache - Cache adapter to store cache entries on the local filesystem.
-- MemcacheD - Cache adapter to store cache entries in the RAM using MemcacheD daemon. ([external requirements](#memcached))
-- Redland: Provides data serializer and parser. Implements the _Saft.data_ and _Saft.Rdf_ interfaces.
+### Virtuoso
+
+Store adapter to OpenLink Virtuoso triple stores.
+
+### HttpStore
+
+<a class="btn" href="rdf">More information</a>
+
+Store adapter to access SPARQL-endpoints over HTTP. 
+
+### ARC2
+
+This backend provides a Store adapter which utilizes ARC2 for storing RDF data in a MySQL database. ARC2 itself also provides serializer and parser for a couple of RDF serializations. It is planned to support that too.
+
+### FileCache
+
+Cache adapter to store cache entries on the local filesystem.
+
+### MemcacheD
+
+Cache adapter to store cache entries in the RAM using MemcacheD daemon.
+
+### Redland
+
+Provides data serializer and parser. Implements the _Saft.data_ and _Saft.Rdf_ interfaces.
 
 ## Virtuoso
 
