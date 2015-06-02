@@ -18,7 +18,13 @@ The Saft PHP Framework consists of the *Saft Library* and the *Saft Skeleton App
 
 ![Structure of the whole Saft Framework](StructureOfSaft.svg)
 
-### Saft REST interface
+### Implementation Conventions
+
+<a class="btn" href="phpframework/implementation-conventions">Conventions</a>
+
+We use certain conventions, when building Saft components. Please have them in mind, when you constribute code or develop for/based on Saft. 
+
+## Saft REST interface
 
 <a class="btn" href="restinterface">Saft REST interface</a>
 
