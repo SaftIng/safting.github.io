@@ -3,7 +3,13 @@ layout: doc
 title: HttpStore
 ---
 
-## Setup Virtuoso as SPARQL endpoint for HTTP requests
+## Requirements
+
+* PHP extension `curl` must be installed and loaded. It is provided by the package `php5-curl`.
+
+## Setup a SPARQL endpoint for HTTP requests using Virtuoso
+
+This chapter describes what you have to do to setup the Virtuoso server to be a SPARQL endpoint.
 
 ### Setup
 
