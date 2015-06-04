@@ -45,7 +45,7 @@ The following table contains an overview which serialization is supported by our
 Serialization | Saft\Addition\EasyRdf | Saft\Data
 ------------- | --------------------- | ---------
 json-ld       |                       |
-n-triples     | X                     |
+n-triples     | X                     | X
 n-quads       |                       | X
 rdf-xml       | X                     |
 rdf-json      | X                     |
