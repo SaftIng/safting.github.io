@@ -9,14 +9,14 @@ The *data* package provides interfaces for parsing and serializing RDF data in v
 
 We support the following serializations using the following string representation, which means, that we identify a serialization using one of the following terms:
 
-- rdf-json
 - json-ld
-- rdfa
-- rdf-xml
-- n-triples
 - n-quads
-- turtle
+- n-triples
+- rdf-json
+- rdf-xml
+- rdfa
 - trig
+- turtle
 
 So, if you want to serialize a string you must use of these terms to set your serialization. 
 
@@ -28,14 +28,14 @@ The following table contains an overview which serialization is supported by our
 
 Serialization | Saft\Addition\EasyRdf | Saft\Data
 ------------- | --------------------- | ---------
-rdf-json      | X                     |
 json-ld       |                       |
-rdfa          | X                     |
-rdf-xml       | X                     |
 n-triples     | X                     |
 n-quads       |                       | 
-turtle        | X                     |
+rdf-xml       | X                     |
+rdf-json      | X                     |
+rdfa          | X                     |
 trig          |                       |
+turtle        | X                     |
 
 
 ### Serializer
@@ -44,28 +44,28 @@ The following table contains an overview which serialization is supported by our
 
 Serialization | Saft\Addition\EasyRdf | Saft\Data
 ------------- | --------------------- | ---------
-rdf-json      | X                     |
 json-ld       |                       |
-rdfa          | X                     |
-rdf-xml       | X                     |
 n-triples     | X                     |
 n-quads       |                       | X
-turtle        | X                     |
+rdf-xml       | X                     |
+rdf-json      | X                     |
+rdfa          | X                     |
 trig          |                       |
+turtle        | X                     |
 
 
 ### Serialization to MIME-Type conversion
 
 Serialization | MIME-Type
 ------------- | ---------
-rdf-json      | application/json
 json-ld       | application/json
-rdfa          | text/html
-rdf-xml       | application/rdf+xml
 n-triples     | application/n-triples
 n-quads       | application/n-quads
+rdf-json      | application/json
+rdf-xml       | application/rdf+xml
+rdfa          | text/html
+trig          | application/trig
 turtle        | text/turtle (application/x-turtle, application/turtle)
-trig          | application/trig`
 
 Related issue:
 - https://github.com/SaftIng/Saft/issues/37
