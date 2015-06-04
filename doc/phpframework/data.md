@@ -25,7 +25,7 @@ Serialization | MIME-Type
 ------------- | ---------
 rdf-json      | application/json
 json-ld       | application/json
-rdfa:         | text/html
+rdfa          | text/html
 rdf-xml       | application/rdf+xml
 n-triples     | application/n-triples
 n-quads       | application/n-quads
