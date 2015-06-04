@@ -1,13 +1,13 @@
 ---
 layout: doc
-title: Back-Ends
+title: Addition
 ---
 
-In _Saft_ we are using the concept of back-ends which are concrete implementations of a selection of interfaces of the _Saft.library_. Usually one back-end groups implementations sharing a certain methodology, technology or library.
+In _Saft_ we are using the concept of additions which are concrete implementations of a selection of interfaces of the _Saft.library_. Usually one addition groups implementations sharing a certain methodology, technology or library.
 
-## Back-Ends
+## Available additions
 
-The following list contains back-end shipped with _Saft_ in the default distribution.
+The following list contains additions shipped with _Saft_ in the default distribution.
 
 ### Virtuoso
 
