@@ -68,4 +68,5 @@ trig          | application/trig
 turtle        | text/turtle (application/x-turtle, application/turtle)
 
 Related issue:
+
 - https://github.com/SaftIng/Saft/issues/37
