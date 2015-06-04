@@ -14,17 +14,17 @@ The _Saft PHP Framework_ consists of:
 
 The *Saft Library* is structured as components. Here is a short list:
 
-<a class="btn" href="backends">Saft.backend</a>
+<a class="btn" href="addition">Saft.addition</a>
 <a class="btn" href="rdf">Saft.rdf</a>
 <a class="btn" href="store">Saft.store</a>
 <a class="btn" href="data">Saft.data</a>
 <a class="btn" href="querycache">Saft.querycache</a>
 
-### Saft.backend
+### Saft.addition
 
-<a class="btn" href="backends">Documentation</a>
+<a class="btn" href="addition">Documentation</a>
 
-Backends are actual implementations of the interfaces of _Saft.library_, for instance a cache or store adapter. Some may provide different kinds of implementations.
+Additions are actual implementations of the interfaces of _Saft.library_, for instance a cache or store adapter. Some may provide different kinds of implementations.
 
 ### Saft.rdf
 
@@ -37,16 +37,6 @@ The RDF component provides interfaces for the basic RDF concepts, such as _Node_
 <a class="btn" href="store">Documentation</a>
 
 The Store component contains classes and interfaces to provide store/database access. We provide the [Store](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/Store.php) interface, which defines a minimum of methods an adapter has to implement to provide store/database access (data querying and data insert/update/deletion).
-
-To help you to create further adapters, we provide two abstract classes: AbstractTriplePatternStore and AbstractSparqlStore. They already implement basic methods to save you time and work.
-
-#### [AbstractSparqlStore](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/AbstractSparqlStore.php)
-
-Its purpose is to be the basement for adapters which interfact with a triple/quad store with a SPARQL engine.
-
-#### [AbstractTriplePatternStore](https://github.com/SaftIng/Saft/blob/master/src/Saft/Store/AbstractTriplePatternStore.php)
-
-If you want to write an adapter for a store, which does not provide a SPARQL engine, you can use that abstract class. That could be the case if you, for instance, want to store triples on the file system.
 
 ### Saft.data
 
