@@ -18,3 +18,11 @@ Further information may be found here:
 - https://logd.tw.rpi.edu/tutorial/installing_using_virtuoso_sparql_endpoint
 
 We prefer to install Virtuoso using the according packages for your operating system. For instance, Virtuoso Universal Server is part of the extended software collection of Debian and Ubuntu. Please ask questions, how to install Virtuoso on your machine, in the Virtuoso [issue tracker](https://github.com/openlink/virtuoso-opensource/issues) or related channels (mailing list, forum, ...)
+
+## SPARQL support
+
+### SPARQL UPDATE 
+
+#### Default Graph
+
+Virtuoso does not support adding or deleting statements in the default graph. (According [issue](https://github.com/openlink/virtuoso-opensource/issues/417)]. The Virtuoso addition throws an error, if you want to do that anyway.
