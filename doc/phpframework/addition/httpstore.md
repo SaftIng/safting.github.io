@@ -65,3 +65,11 @@ This method is neccessary for the HttpStoreTest, because it marks tests skipped,
 Related issues:
 
 - [https://github.com/SaftIng/Saft/issues/30](https://github.com/SaftIng/Saft/issues/30)
+
+## SPARQL support
+
+### SPARQL UPDATE 
+
+#### Default Graph
+
+In general you don't know what store runs behind an endpoint. Because of that it may support adding and deleting statements in the default graph, or not. Therefore it is hard to tell from the outside, if an endpoint supports it. If it does not, an exception will be thrown, if it does, the command will run through as always.
