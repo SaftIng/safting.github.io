@@ -25,4 +25,4 @@ We prefer to install Virtuoso using the according packages for your operating sy
 
 #### Default Graph
 
-Virtuoso does not support adding or deleting statements in the default graph. (According [issue](https://github.com/openlink/virtuoso-opensource/issues/417)]. The Virtuoso addition throws an error, if you want to do that anyway.
+Virtuoso does not support adding or deleting statements in the default graph. (According [issue](https://github.com/openlink/virtuoso-opensource/issues/417). The Virtuoso addition throws an error, if you want to do that anyway.
