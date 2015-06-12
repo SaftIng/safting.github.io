@@ -20,10 +20,10 @@ For reading access to the Store.
 - `lt` = literal type: language tag or URI or * (empty)
 
 #### More options
-- `action`/`verb` = **get** is default; possible verbs: get, delete, count, ask
+- `action` = **get** is default; possible verbs: get, delete, count, ask
 - `limit` = **0** is default, integer, equal or higher as 0; indicates the start id in a set of statements
 - `offset` = **null** (empty) is default, integer, equal or higher as 1; indicates the amount of statements put into the result set
-- `graphUri` = URI of the graph to send the query to
+- `graph` = URI of the graph to send the query to
 - `case_insensitive` = **true** is default; is the query case insensitive or not
 - `reasoning_on` = **false** is default; activate reasoning while query handling
 
