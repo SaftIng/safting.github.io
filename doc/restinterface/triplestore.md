@@ -27,7 +27,7 @@ Possible values are overall:
 - application/n-triples, 
 - text/nquads
 
-**Important note:** It is called *prefered* value and not *default* value, because it is not guarantueed that the later implementation supports it and so you should not rely on it.
+**Important note:** It is called *prefered* value and not *default* value, because it is not guarantueed that the later implementation supports it and so you should not rely on it. Instead, add a full list of accepted content types.
 
 ### Required parameters
 
