@@ -21,7 +21,7 @@ For reading access to the Store.
 
 #### More options
 
-- `action` = `get` is default; possible verbs: get, delete, count, ask
+- `action` = `get` is default; possible verbs: add, ask, count, delete, get
 - `limit` = `0` is default, integer, equal or higher as 0; indicates the start id in a set of statements
 - `offset` = `null` (empty) is default, integer, equal or higher as 1; indicates the amount of statements put into the result set
 - `graphUri` = URI of the graph to send the query to
