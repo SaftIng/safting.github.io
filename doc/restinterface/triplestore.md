@@ -7,20 +7,38 @@ The light weight REST Store API.
 
 > Maybe we should also consider the [SPARQL 1.1 Graph Store HTTP Protocol](http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321/) but it doesn't seam to cover all of our requirements.
 
-## Exploring-API
+# Exploring-API
 
 For reading access to the Store.
 
-### GET/POST Parameter
+## Request
+
+## HTTP-Header
+
+### Accept
+
+Standard: text/json-ld
+
+Possible values are: 
+
+- application/json
+- text/turtle
+  - alternatives: application/x-turtle, application/turtle
+- application/n-triples, 
+- text/nquads 
+
+(Comment by @nate: we shouldn't give a default here, because implementations could want other defaults, e.g. an HTML representation.)
+
+### Required parameters
 
 - `s` = subject URI or * (empty)
 - `p` = predicate URI or * (empty)
 - `o` = object URI or Literal or * (empty)
 - `ot` = object type: keyword `uri`/`literal` (mandatory only if `o` is specified)
+
+### Optional parameters
+
 - `lt` = literal type: language tag (e.g. en_US) or URI or * (empty), `http://www.w3.org/2001/XMLSchema#string` is default if parameter `ot`=`literal`, `*` if parameter `ot`=`uri`
-
-#### More options
-
 - `action` = `get` is default; possible verbs: add, ask, count, delete, get
 - `limit` = `0` is default, integer, equal or higher as 0; indicates the start id in a set of statements
 - `offset` = `null` (empty) is default, integer, equal or higher as 1; indicates the amount of statements put into the result set
@@ -28,18 +46,7 @@ For reading access to the Store.
 - `case_insensitive` = `true` is default; is the query case insensitive or not
 - `reasoning_on` = `false` is default; activate reasoning while query handling
 
-### REQUEST Parameter
-
-Accept: text/json-ld (default)
-
-Possible values are: 
-
-- text/turtle, 
-- text/ntriples, 
-- text/nquad 
-
-(Comment by @nate: we shouldn't give a default here, because implementations could want other defaults, e.g. an HTML representation.)
-
-## manipulate API
+# Manipulate API
 
 todo: add delete
+todo: neccessary to split exploring and manipulating API?
