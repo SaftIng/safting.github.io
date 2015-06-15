@@ -17,17 +17,17 @@ For reading access to the Store.
 
 ### Accept
 
-Standard: text/json-ld
+Prefered value: application/json
 
-Possible values are: 
+Possible values are overall: 
 
 - application/json
 - text/turtle
   - alternatives: application/x-turtle, application/turtle
 - application/n-triples, 
-- text/nquads 
+- text/nquads
 
-(Comment by @nate: we shouldn't give a default here, because implementations could want other defaults, e.g. an HTML representation.)
+**Important note:** It is called *prefered* value and not *default* value, because it is not guarantueed that the later implementation supports it and so you should not rely on it.
 
 ### Required parameters
 
