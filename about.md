@@ -14,6 +14,8 @@ Saft is the aim to build a collection of components which helps you to create ap
 
 Saft is also an integration platform, which integrates for foreign libraries and technologies, such as [ARC2](https://github.com/semsol/arc2), [EasyRdf](http://www.easyrdf.org/) or [Redland](http://librdf.org/). They will be used, for instance, for parsing/serialization or triple store access. Saft handles the configuration and setup and appears as one API for the user. But he has the option to opt-in, if he wants.
 
+![](doc/integrationplatform.png)
+
 ### ... is compatible and open
 
 One of the main goals of Saft is to be open and compatible. For instance:
