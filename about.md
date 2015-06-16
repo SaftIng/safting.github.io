@@ -8,6 +8,8 @@ permalink: /about/
 
 ### ... is a collection of lightweight components
 
+<img src="https://safting.github.io/doc/StructureOfSaft.svg" style="width: 80%; border: 0px;" >
+
 Saft is the aim to build a collection of components which helps you to create applications by using Semantic Web/Linked Data technology. The main goal of Saft is to provide a full fledged middleware, which supports a wide range of use cases in the Semantic Web field, from data consuming, data manipulation, querying and database/store interaction. The project structure can be devided into [_saft.library_](/doc/phpframework), containing interfaces and components which can be included in any existing application structure, and the [_saft.skeleton_](/doc/phpframework), which helps developers to bootstrap an application from the scratch.
 
 ### ... is an integration platform
@@ -16,7 +18,7 @@ Saft is also an integration platform, which integrates for foreign libraries and
 
 #### Basic illustration
 
-<img src="http://safting.github.io/doc/integrationplatform.png" style="width: 80%; border: 0px;" >
+<img src="https://safting.github.io/doc/integrationplatform.png" style="width: 80%; border: 0px;" >
 
 This image illustrates the integration platform. The core components provide basic functionality and interfaces. They build the basement for Saft.Addition, which contains real implementations, organized as components as well. Each addition has its own purpose. 
 
