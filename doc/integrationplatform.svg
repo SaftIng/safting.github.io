@@ -14,8 +14,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="integrationplattform.svg"
-   inkscape:export-filename="/home/k00ni/Documents/safting.github.io/doc/integrationplattform.png"
+   sodipodi:docname="integrationplatform.svg"
+   inkscape:export-filename="/home/k00ni/Documents/safting.github.io/doc/integrationplatform.png"
    inkscape:export-xdpi="101.19"
    inkscape:export-ydpi="101.19">
   <defs
@@ -61,21 +61,6 @@
        height="116.61778"
        x="163.64471"
        y="59.440594" />
-    <text
-       xml:space="preserve"
-       style="font-size:29.55814552px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="161.26196"
-       y="38.235664"
-       id="text3755"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3757"
-         x="161.26196"
-         y="38.235664"><tspan
-           style="fill:#4d4d4d"
-           id="tspan4541">Saft</tspan><tspan
-           style="font-size:16px;font-style:italic;-inkscape-font-specification:Sans Italic"
-           id="tspan4018"> Version 0.x</tspan></tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:1.93299139;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3759"
