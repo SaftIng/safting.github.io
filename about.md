@@ -14,7 +14,13 @@ Saft is the aim to build a collection of components which helps you to create ap
 
 Saft is also an integration platform, which integrates for foreign libraries and technologies, such as [ARC2](https://github.com/semsol/arc2), [EasyRdf](http://www.easyrdf.org/) or [Redland](http://librdf.org/). They will be used, for instance, for parsing/serialization or triple store access. Saft handles the configuration and setup and appears as one API for the user. But he has the option to opt-in, if he wants.
 
+#### Basic illustration
+
 <img src="http://safting.github.io/doc/integrationplatform.png" style="width: 80%; border: 0px;" >
+
+This image illustrates the integration platform. The core components provide basic functionality and interfaces. They build the basement for Saft.Addition, which contains real implementations, organized as components as well. Each addition has its own purpose. 
+
+For instance Saft.Addition.ARC2: It uses the foreign ARC2 library to provide a database adapter to use a MySQL database as triple store. To do so, it implements/extends existing classes and interfaces to connect with their ARC2 pendants.
 
 ### ... is compatible and open
 
