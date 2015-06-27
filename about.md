@@ -39,9 +39,53 @@ Saft is also open for participation and welcomes code, bug reports, translations
 
 There are already a couple of frameworks/libraries out there, providing support for RDF consumption and querying, build SPARQL etc. pp, so why we are doing this?
 
+### Basic use cases
+
+Before we start to explain the reasons why Saft was developed and how it is in comparison to other projects, we want to discuss the use cases we want to cover.
+
+#### 1. Consuming RDF (load, manipulate, parse, serialize)
+
+That is one of the main use-cases. RDF is a meta-data model and propagades the triple structure to store data. You can use RDF in the RDFa flavour to annotate your HTML and search engines like Google will recognize and use it. RDF is also a good way to interchange data.
+
+**Important tasks:**
+
+1. Parse a file containing RDF data
+2. Store RDF data into a file
+3. Parse a string which contains RDF information
+4. Transform data into the RDF-format
+
+#### 2. Send and handle SPARQL queries
+
+SPARQL is a mighty language and can be used as an *interface* to a service, application or library. 
+
+**Important tasks:**
+
+1. Build SPARQL queries using an API
+2. Send SPARQL to a local store or an endpoint on the internet
+3. Handle the result of a SPARQL result
+
+#### 3. Access triple and quad stores (even via emulation)
+
+That use case is not Semantic Web specific, but very important for the data management though. Triple stores might provide interfaces for PDO or ODBC, but sometimes it is neccessary to use custom implementations to unleash the full potential of a database.
+
+**Important tasks:**
+1. Provide an object oriented qay to access a database (triple-/quadstore, RDBS)
+2. Provide an emulation to store non-relational data into a relational database. That comes in handy in combination with use case 4. integration into classic applications. 
+
+#### 4. Integration into classic applications
+
+Semantic Web technologies are (still) very cutting edge and not many folks know how to use it or what to use them for. So there must be an easy way to extend existing (legacy) applications using new Semantic Web technology. Furthermore tools must be provided to make it easy to use such technologies, without the need to study long specifications.
+
+**Important tasks:**
+
+1. Provide easy-to-use tools (libraries, classes, even functions) for new users to use Semantic Web technologies inside his application
+2. Provide tools to to transform non-RDF data into the RDF format
+3. Support open standards and try to provide at least one working implementation, so the user is able to test and use it
+
+
 ### Saft in comparison to existing project
 
-In the following we provide an overview about existing projects and what differenciates them from Saft.
+After we described the basic use cases, we think are important to support, we provide an overview about existing projects and what differenciates them from Saft. The following overview was made with that use cases in mind.
 
 #### [Erfurt Framework](https://github.com/AKSW/Erfurt)
 
