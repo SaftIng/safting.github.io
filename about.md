@@ -39,7 +39,7 @@ Saft is also open for participation and welcomes code, bug reports, translations
 
 There are already a couple of frameworks/libraries out there, providing support for RDF consumption and querying, build SPARQL etc. pp, so why we are doing this?
 
-### Difference between Saft and ... 
+### Saft in comparison to existing project
 
 In the following we provide an overview about existing projects and what differenciates them from Saft.
 
