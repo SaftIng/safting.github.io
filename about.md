@@ -69,6 +69,7 @@ SPARQL is a mighty language and can be used as an *interface* to a service, appl
 That use case is not Semantic Web specific, but very important for the data management though. Triple stores might provide interfaces for PDO or ODBC, but sometimes it is neccessary to use custom implementations to unleash the full potential of a database.
 
 **Important tasks:**
+
 1. Provide an object oriented qay to access a database (triple-/quadstore, RDBS)
 2. Provide an emulation to store non-relational data into a relational database. That comes in handy in combination with use case 4. integration into classic applications. 
 
