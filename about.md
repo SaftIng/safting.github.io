@@ -35,6 +35,48 @@ One of the main goals of Saft is to be open and compatible. For instance:
  
 Saft is also open for participation and welcomes code, bug reports, translations, ... any help from people, who want to help.
 
+## Motivation
+
+There are already a couple of frameworks/libraries out there, providing support for RDF consumption and querying, build SPARQL etc. pp, so why we are doing this?
+
+### Difference between Saft and ... 
+
+In the following we provide an overview about existing projects and what differenciates them from Saft.
+
+#### [Erfurt Framework](https://github.com/AKSW/Erfurt)
+
+The Erfurt framework was created by the ASKW and it is only be maintained, but there is no further development. It provides a good support for all important areas of the Semantic Web, from RDF consumption over building SPARQL-queries to extensive SPARQL query caching. The project owners of Saft were both working or still are on Erfurt. The main reason, why Saft was founded instead of helping Erfurt to claim new ground was, because of Erfurts interal structure. It grows over time and there were some architectual choices made, which made it very hard to change something in the core. Furthermore, its test suite was abandoned and testing parts of Erfurt is very hard. Furthermore the lack of development from the original team was also a reason.
+
+But Saft contains many ideas and even code from Erfurt. For instance, the Virtuoso Universal Server adapter from Erfurt is very handy. We dont see Saft as the successor of Erfurt, but Saft surely inherits some of Erfurts legacy.
+
+#### [EasyRdf](http://www.easyrdf.org)
+
+> EasyRdf is a PHP library designed to make it easy to consume and produce RDF
+
+It is very handy and provides a good set of components/functions and it is even part of [Drupal 8 Core](https://www.drupal.org/node/1866858). But it lacks adapters to access triplestores and does not provide extensive SPARQL query handling. Because the founders previously worked on Erfurt, they had a certain opinion about the internal architecture of such a library. 
+
+Nevertheless, Saft provides an adapter for EasyRdf to provide its good parsing and serialization functionalities. As stated above, we designed Saft to be also an integration platform, integrating existing projects and provide a unified way to use them. We at Saft believe that you could always create your own project if want, if you are not satisfied with existing solution. But if you do so, you should also keep in mind, that existing solutions maybe way better than yours, so be as much compatible as possible, to provide a way for your *users* to use what they want and combine stuff without running into a dead end.
+
+#### [ARC2](https://github.com/semsol/arc2)
+
+> ARC2 is a PHP 5.3 library for working with RDF. It also provides a MySQL-based triplestore with SPARQL support
+
+ARC2 is a little bit like EasyRdf. For instance, it provides serialization and parsing components and an internal graph representation. It differs from EasyRDf by providing an adapter for the MySQL database to store triples (provides querying the data as well). It almost fully supports SPARQL 1.0 and some parts of SPARQL 1.1.
+
+The project owner [bnowack](https://github.com/bnowack) stated that there is no further development of ARC2:
+
+> Feature-wise, ARC2 is now in a stable state with no further feature additions planned. Issues are still being fixed and Pull Requests are welcome, though.
+
+Not only that, adding support for SPARQL 1.1 would result into a lot of work on the internals (according [issue](https://github.com/semsol/arc2/issues/57)). But despite that, Saft provides an adapter for ARC2, to use its good adapter for the MySQL database. Doing that, Saft is able to provide support for triple/quad data management in triple-/quadstores and relational databases. Well, currently ARC2 uses mysqli, but port it to ODBC via PDO should not that difficult. 
+
+So, why didn't we supported ARC2? The reason was, its internal structure is not very OOP and the code is hard to understand. Furthermore implementing support for SPARQL 1.1 may result into rewriting (huge) parts of the library. Another reason is, that ARC2 does not seem to provide an abstraction layer to be independent from the underlying database adapter. 
+
+#### [Nemrod](https://github.com/conjecto/nemrod) (Symfony2)
+
+> Nemrod is a framework providing an abstraction layer for handling (consuming and producing) RDF in a Symfony2 project.
+
+Well, that project came to our knowledge a few days ago (June 2015). Its documentation and code looked very promising, but it is tied to Symfony2. We wanted to create a project which is not specific to a certain use case/library/framework. 
+
 
 ## Short historical overview
 
