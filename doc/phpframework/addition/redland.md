@@ -15,37 +15,7 @@ Requires the php extensions `redland` which is provided by the package `php5-lib
 
 ### Configure
 
-Adapting php.ini is neccessary to make sure the redland.so is loaded. You must adapt the php.ini in `/etc/php5/cli/php.ini` and add in the section `Dynamic Extensions` the following line: `extension=redland.so`
-
-So here is an example how that section could look like afterwards:
-
-<code>
-;;;;;;;;;;;;;;;;;;;;;;
-; Dynamic Extensions ;
-;;;;;;;;;;;;;;;;;;;;;;
-
-; If you wish to have an extension loaded automatically, use the following
-; syntax:
-;
-;   extension=modulename.extension
-;
-; For example, on Windows:
-;
-;   extension=msql.dll
-;
-; ... or under UNIX:
-;
-;   extension=msql.so
-;
-; ... or with a path:
-;
-;   extension=/path/to/extension/msql.so
-;
-; If you only provide the name of the extension, PHP will look for it in its
-; default extension directory.
-;
-extension=redland.so
-</code>
+Adapting php.ini is neccessary to make sure the redland.so is loaded. You must adapt the php.ini in `/etc/php5/cli/php.ini` and add in the section `Dynamic Extensions` the following: `extension=redland.so`
 
 Same procedure for `/etc/php5/apache2/php.ini`. Restart apache2 service after you are done.
 
