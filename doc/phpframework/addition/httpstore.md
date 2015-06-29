@@ -27,7 +27,7 @@ Create a new user via the [Conductor](http://localhost:8890/conductor/) with the
 - **User Enabled** must be checked
 - **User Type:** SQL/ODBC and WebDAV
 - **Primary Role:** SPARQL_SELECT
-- **Account Roles Selected:** SPARQL_SELECT
+- **Account Roles Selected:** SPARQL_UPDATE
 
 This user will be used for Digest Authentication.
 
