@@ -12,13 +12,39 @@ Store adapter to OpenLink's [Virtuoso Universal Server](http://virtuoso.openlink
 
 ## Installation
 
-For more information how to install and setup a Virtuoso Universal Server please have a look here: http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSBuild
+### General
+
+To install and setup a Virtuoso Universal Server please have a look here: http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSBuild
 
 Further information may be found here:
 - https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend
 - https://logd.tw.rpi.edu/tutorial/installing_using_virtuoso_sparql_endpoint
 
 We prefer to install Virtuoso using the according packages for your operating system. For instance, Virtuoso Universal Server is part of the extended software collection of Debian and Ubuntu. Please ask questions, how to install Virtuoso on your machine, in the Virtuoso [issue tracker](https://github.com/openlink/virtuoso-opensource/issues) or related channels (mailing list, forum, ...)
+
+### Ubuntu and Debian related
+
+The Linked Data Stack provides a repository to install dozens of packages related to the Semantic Web: http://stack.linkeddata.org/getting-started/installing-components
+
+The following sub-sections describe how to install Virtuoso 7.1 in the system. For further information please have a look into according links, because the Saft team does not provide further Virtuoso support.
+
+#### Ubuntu 14.04
+
+Introductions to install Virtuoso 7.1:
+
+* download the repository package:  `wget http://stack.linkeddata.org/ldstable-repository.deb`
+* install the repository package: `sudo dpkg -i ldstable-repository.deb`
+* update the repository database: `sudo apt-get update`
+
+Unfortunately, the Linked Data Stack does not contain all packages needed. So you need to add the following line to `/etc/apt/sources.list`:
+
+> deb http://security.ubuntu.com/ubuntu precise-security main 
+
+After that run the following two commands to install Virtuoso Universal Server 7.1:
+* `sudo apt-get update`
+* `sudo apt-get install virtuoso-opensource-7.1 virtuoso-opensource-7.1-bin libvirtodbc0 libiodbc2`
+
+The reason for these additional steps is, that Virtuoso 7.1 needs `libmagickwand4`, but it is not part of Ubuntu 14.04 repositories anymore.
 
 ## Troubleshooting
 
