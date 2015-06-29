@@ -19,7 +19,8 @@ Adapting php.ini is neccessary to make sure the redland.so is loaded. You must a
 
 So here is an example how that section could look like afterwards:
 
-```ini
+```
+
 ;;;;;;;;;;;;;;;;;;;;;;
 ; Dynamic Extensions ;
 ;;;;;;;;;;;;;;;;;;;;;;
@@ -45,6 +46,7 @@ So here is an example how that section could look like afterwards:
 ; default extension directory.
 ;
 extension=redland.so
+
 ```
 
 Same procedure for `/etc/php5/apache2/php.ini`. Restart apache2 service after you are done.
