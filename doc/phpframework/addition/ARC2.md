@@ -52,4 +52,5 @@ ARC2 uses SPARQL+, its own SPARQL extension, to provide data management. To remo
 
 > DELETE FROM <http://example.com/inferred> { ?s rel:wouldLikeToKnow ?o . } WHERE { ?s kiss:kissed ?o . }
 
-No quads supported. The ARC2 adapter rewrites DELETE queries to support quads in DELETE queries anyway.
+The ARC2 adapter rewrites DELETE queries with quads inside to support quads in DELETE queries anyway. What does it mean:
+- Support for quads, where the graph is an URI and *not* a pattern/variable
