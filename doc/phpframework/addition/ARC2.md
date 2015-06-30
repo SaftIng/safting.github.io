@@ -41,3 +41,15 @@ You can setup MySQL accordingly with the following set of SQL commands:
 `grant all privileges on saft.* to 'saft'@'localhost';`
 
 You can execute those commands using the `mysql` commandline tool. Or perhaps you want to use phpMyAdmin to create the user and a database. [Here](https://www.youtube.com/watch?v=lfjzAbaW32c) is a short youtube video how to accomplish that.
+
+## Compatibility
+
+This section documents the changes on the behavior of the ARC2 adapter. ARC2 lacks certain SPARQL features, such as SPARUL or uses its own implementation ([SPARQL+](https://github.com/semsol/arc2/wiki/SPARQL%2B)). This adapter extends ARC2 to support for further SPARQL 1.0/1.1 features.
+
+### DELETE WHERE (no quad support)
+
+ARC2 uses SPARQL+, its own SPARQL extension, to provide data management. To remove triples, you have to use queries such as:
+
+> DELETE FROM <http://example.com/inferred> { ?s rel:wouldLikeToKnow ?o . } WHERE { ?s kiss:kissed ?o . }
+
+No quads supported. The ARC2 adapter rewrites DELETE queries to support quads in DELETE queries anyway.
