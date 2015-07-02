@@ -13,14 +13,13 @@ That convention affects all implementations of a Saft interface. If you pass a p
 
 Here is some example code:
 
-```php
-class Foo 
-{
-private $bar;
-public function __construct($bar)
-{
-$this->bar = $bar;
-}
-}
-```
+    <?php
 
+    class Foo
+    {
+        private $bar;
+        public function __construct($bar)
+        {
+            $this->bar = $bar;
+        }
+    }
