@@ -39,16 +39,14 @@ The namespace structure should be reflected on the filesystem level.
 
 * `\Saft\`
     * `Rdf\`
-    * `Store\`
     * `Data\`
+    * `Store\`
     * `Sparql\`
-    * `Cache\`
-    * `QueryCache\`
-    * `Backend\`
+    * `Addition\`
         * _Name of the implementation_`\`
             * `Rdf\`
-            * `Store\`
             * `Data\`
+            * `Store\`
             * _Custom Subpackages_`\`
             * …
 
@@ -61,16 +59,16 @@ The Structure is expressed in an `interface`, method which are common to all or 
 
 The `abstract class` should try to make as view assumptions about the implementations and should only communicate with the implemantation via methods, which are implemented by the implementation.
 
-The naming of those items is as follows, using the example of the 
+The naming of those items is as follows, using the example of the
 
-- `Statement`: `interface Statement`, 
-- `abstract class AbstractStatement implements Statement` and 
+- `Statement`: `interface Statement`,
+- `abstract class AbstractStatement implements Statement` and
 - `class StatementImpl extends AbstractStatement`.
 
-Or looking at the `Store` it should be 
+Or looking at the `Store` it should be
 
-- `interface Store`, 
-- `abstract class AbstractSparqlStore implements Store` vs. `abstract class AbstractTriplePatternStore implements StoreInterface` and e.g. 
+- `interface Store`,
+- `abstract class AbstractSparqlStore implements Store` vs. `abstract class AbstractTriplePatternStore implements StoreInterface` and e.g.
 - `class ArrayStoreImpl extends AbstractTriplePatternStore`.
 
 ## Test Cases
