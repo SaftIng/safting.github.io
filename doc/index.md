@@ -36,7 +36,7 @@ For server side implementation of Semantic Web applications, e.g. implementing a
 ## Application Programming Interface
 
 _Saft_ provides an _Application Programming Interface (API)_ which can be used by application developers to use and extend the provided library resp. framework.
-The API consists of all classes and methods tagged with the `@api` tag. To identify the version when the class or method was introduces the `@since` tag specifies the API-version. Deprecated methods are marked with `@deprecated`. (TODO: we have to decide, how the introduction of new parameters with default parameters and thus no API break will be marked.)
+The API consists of all classes and methods tagged with the `@api` tag ([FIG-5 @api](https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md#81-api)). To identify the version when the class or method was introduces or changed the `@since` tag is used together with the according API-version ([FIG-5 @since](https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md#817-since)). Deprecated methods are marked with `@deprecated` ([FIG-5 @deprecated](https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md#85-deprecated)).
 
 [API classes and method](apimethods).
 
