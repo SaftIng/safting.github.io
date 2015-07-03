@@ -7,35 +7,35 @@ Part of the API are interfaces, (abstract) classes and methods. This site gives 
 
 **Important note:** Saft is still under heavy development, but we try to stabilize the API and will only change the API, if neccessary. 
 
-# Saft.Rdf
+## Saft.Rdf
 
-## Node related
+### Node related
 
-### Abstract classes
+#### Abstract classes
 
 - AbstractBlankNode
 - AbstractLiteral
 - AbstractNamedNode
 
-## Interfaces
+#### Interfaces
  
 - BlankNode
 - Literal
 - NamedNode
 - Node
 
-## Statement related
+### Statement related
 
-### Abstract classes
+#### Abstract classes
 
 - AbstractStatement
 
-### Interfaces
+#### Interfaces
 
 - Statement
 
-# Saft.Data
+## Saft.Data
 
-# Saft.Store
+## Saft.Store
 
-# Saft.Sparql
+## Saft.Sparql
