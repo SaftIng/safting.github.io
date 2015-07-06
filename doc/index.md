@@ -8,7 +8,7 @@ permalink: /doc/
 
 > For using Saft you should have a basic understanding of the [Resource Description Framework (RDF)](https://en.wikipedia.org/wiki/Resource_Description_Framework), [SPARQL](https://en.wikipedia.org/wiki/SPARQL) and the idea of the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web).
 
-You have reached the documentation of the Saft project. Here you will find information about the Saft PHP framework itself, the Saft REST interface and how to constribute to the project. If you have a question, dont hesitate to open a [new issue](https://github.com/SaftIng/Saft/issues/new).
+You have reached the documentation of the Saft project. Here you will find information about the Saft PHP framework itself, the Saft REST interface and how to constribute to the project. If you have a question, don't hesitate to open a [new issue](https://github.com/SaftIng/Saft/issues/new).
 
 ## Saft PHP framework
 
