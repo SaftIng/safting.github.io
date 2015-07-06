@@ -18,6 +18,8 @@ Part of the API are interfaces, (abstract) classes and methods. This site gives 
 - NamedNode
 - Node
 - NodeFactory
+- StatementFactoyrg
+- StatementIterator
 
 #### Abstract classes
 
@@ -40,6 +42,17 @@ Part of the API are interfaces, (abstract) classes and methods. This site gives 
 - Statement
 
 ## Saft.Data
+
+#### Interfaces
+
+- Parser
+- ParserFactory
+- Serializer
+- SerializerFactory
+
+#### Classes
+
+- SerializationUtils
 
 ## Saft.Store
 
