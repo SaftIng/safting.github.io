@@ -70,7 +70,7 @@ That use case is not Semantic Web specific, but very important for the data mana
 
 **Important tasks:**
 
-1. Provide an object oriented qay to access a database (triple-/quadstore, RDBS)
+1. Provide an object oriented way to access a database (triple-/quadstore, RDBS)
 2. Provide an emulation to store non-relational data into a relational database. That comes in handy in combination with use case 4. integration into classic applications. 
 
 #### 4. Integration into classic applications
