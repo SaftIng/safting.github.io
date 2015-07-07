@@ -16,7 +16,7 @@ For further information about the project goals, please have a look at the [Abou
 
 ## Getting started
 
-Saft grows rapidly and can be very overwhelming at the beginning. If you want to dive in directly, please have a look into the examples: https://github.com/SaftIng/Saft.example. This is a good starting point to check out parts of Saft. We tried to make the examples as clear as possible.
+Saft grows rapidly and can be very overwhelming at the beginning. If you want to dive in directly, please have a look into the examples: [**https://github.com/SaftIng/Saft.example**](https://github.com/SaftIng/Saft.example). This is a good starting point to check out parts of Saft. We tried to make the examples as clear as possible.
 
 ## Integration
 
