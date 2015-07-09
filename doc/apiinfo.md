@@ -56,4 +56,14 @@ Part of the API are interfaces, (abstract) classes and methods. This site gives 
 
 ## Saft.Store
 
+#### Interfaces
+
+- ChainableStore
+- Store
+
+#### Abstract classes
+
+- AbstractSparqlStore
+- AbstractTriplePatternStore
+
 ## Saft.Sparql
