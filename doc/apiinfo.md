@@ -67,3 +67,9 @@ Part of the API are interfaces, (abstract) classes and methods. This site gives 
 - AbstractTriplePatternStore
 
 ## Saft.Sparql
+
+## Saft.Test
+
+#### Classes
+
+- TestCase
