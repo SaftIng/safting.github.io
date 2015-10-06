@@ -57,7 +57,7 @@ You can set certain options to be used to setup the environment the query will b
 * **output_format** - Output format of the result. If set to json, Virtuoso will provide further information about the result.
   * json
   * *empty*, means not set
-* default_graph_uri - Set a default graph to be used if no FROM clause is set.
+* **default_graph_uri** - Set a default graph to be used if no FROM clause is set.
   * e.g. http://foo/
 
 ## Troubleshooting
