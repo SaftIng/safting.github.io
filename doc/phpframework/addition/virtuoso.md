@@ -54,10 +54,10 @@ The reason for these additional steps is, that Virtuoso 7.1 needs `libmagickwand
 
 You can set certain options to be used to setup the environment the query will be executed in. The following list contains what is support by the Virtuoso addition.
 
-* **output_format** - (Default: json) Output format of the result. If set to json, Virtuoso will provide further information about the result. If it is not set, the store will automatically use *json*.
+* **output_format** - (Default: json) - Output format of the result. If set to json, Virtuoso will provide further information about the result. If it is not set, the store will automatically use *json*.
   * json
   * *empty*, means not set
-* **default_graph_uri** - Set a default graph to be used if no FROM clause is set.
+* **default_graph_uri** - (Default: *empty*) - Set a default graph to be used if no FROM clause is set.
   * e.g. http://foo/
 
 ## Troubleshooting
