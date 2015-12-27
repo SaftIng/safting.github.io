@@ -84,15 +84,15 @@ Semantic Web technologies are (still) very cutting edge and not many folks know 
 3. Support open standards and try to provide at least one working implementation, so the user is able to test and use it
 
 
-### Saft in comparison to existing project
+### Saft in comparison to existing projects
 
-After we described the basic use cases, we think are important to support, we provide an overview about existing projects and what differenciates them from Saft. The following overview was made with that use cases in mind.
+After we described the basic use cases, we think, are important to support, we will provide an overview about existing projects and what differenciates them from Saft. The following overview was made with that use cases in mind.
 
 #### [Erfurt Framework](https://github.com/AKSW/Erfurt)
 
-The Erfurt framework was created by the ASKW and it is only be maintained, but there is no further development. It provides a good support for all important areas of the Semantic Web, from RDF consumption over building SPARQL-queries to extensive SPARQL query caching. The project owners of Saft were both working or still are on Erfurt. The main reason, why Saft was founded instead of helping Erfurt to claim new ground was, because of Erfurts interal structure. It grows over time and there were some architectual choices made, which made it very hard to change something in the core. Furthermore, its test suite was abandoned and testing parts of Erfurt is very hard. Furthermore the lack of development from the original team was also a reason.
+The Erfurt framework was created by the ASKW and it is only be maintained currently, but there is no active development. It provides a good support for all important areas of the Semantic Web, from RDF consumption over building SPARQL-queries to extensive SPARQL query caching. The project owners of Saft were both working or still are on Erfurt. The main reason, why Saft was founded instead of helping Erfurt to claim new ground was because of Erfurts interal structure. It grows over time and there were some architectual choices made, which made it very hard to change something in the core. Furthermore, its test suite was abandoned and testing parts of Erfurt is very hard. Furthermore the lack of development from the original team was also a reason.
 
-But Saft contains many ideas and even code from Erfurt. For instance, the Virtuoso Universal Server adapter from Erfurt is very handy. We dont see Saft as the successor of Erfurt, but Saft surely inherits some of Erfurts legacy.
+But Saft contains many ideas and even code from Erfurt. For instance, the Virtuoso Universal Server adapter from Erfurt is very handy. We dont see Saft as the successor of Erfurt, but Saft surely inherits some of Erfurts legacy. Erfurt is partly supported by Saft which means, that you can use Erfurts functionality inside of Saft. That enables you to use both, if you want.
 
 #### [EasyRdf](http://www.easyrdf.org)
 
