@@ -17,7 +17,7 @@ To get an idea what the QueryCache is for, here are a couple of code snippets.
 
 The QueryCache relies on the cache infrastructure located under saft.cache. It is simple key-value-pair based. All information about queries and their parts will be saved using the given cache instance.
 
-```php
+```
   // setup a cache instance
   $cache = new Cache( /* ... */ );
 
@@ -31,7 +31,7 @@ Saving a query result is very simple, you just need the SPARQL query and the acc
 
 Our current caching infrastructure (with MemcacheD and FileCache) can serialize nearly all PHP-structure, no matter if its an array or an object structure.
 
-```php
+```
   // Instance of Query
   $query = AbstractQuery::initByQueryString(
     "SELECT ?s FROM <http://graph/> WHERE {?s ?p ?o.}"
