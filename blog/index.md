@@ -1,7 +1,7 @@
 ---
 layout: home
 title: SaftIng Blog
-permalink: /blog
+permalink: /blog/
 ---
 
 ## Blog
