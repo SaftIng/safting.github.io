@@ -20,9 +20,8 @@ The *Saft Library* is structured as components. There are standard components wh
 
 The RDF component provides interfaces for the basic RDF concepts, such as _Node_ (Namednode/URI-Resource, Literal, Blanknode) and _Statement_ (Triple and Quad). Additionally the StatementIterator provides a datastructure for just holding a list of Statements. It was designed to fit the terminology of the Semantic Web.
 
-### Saft.data
 
-<a class="btn" href="data">Documentation</a>
+<a class="btn" href="data">Saft.data</a>
 
 The Data component provides parser and serializer interfaces and classes:
 
