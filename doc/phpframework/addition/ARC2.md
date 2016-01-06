@@ -34,11 +34,9 @@ Of course, you can override it with your own data. ARC2 will create the database
 
 You can setup MySQL accordingly with the following set of SQL commands:
 
-`create user 'saft'@'localhost' identified by 'saft';`
-
-`create database saft;`
-
-`grant all privileges on saft.* to 'saft'@'localhost';`
+    create user 'saft'@'localhost' identified by 'saft';
+    create database saft;
+    grant all privileges on saft.* to 'saft'@'localhost';
 
 You can execute those commands using the `mysql` commandline tool. Or perhaps you want to use phpMyAdmin to create the user and a database. [Here](https://www.youtube.com/watch?v=lfjzAbaW32c) is a short youtube video how to accomplish that.
 
