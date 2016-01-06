@@ -10,12 +10,12 @@ The Saft RDF library provides interfaces for the basic RDF concepts, such as _No
 We provide interfaces which describe basic RDF concepts, such as a node. For each interface we alsow provide a standard implementation. If you need to change the behavior of a standard implementation, just extend it or create a fresh class which implements the related interface(s).
 
 **List of RDF specific interfaces:**
-  * Node
-  * Literal
-  * NamedNode
-  * BlankNode
-  * Statement
-  * AnyPattern
+    * Node
+    * Literal
+    * NamedNode
+    * BlankNode
+    * Statement
+    * AnyPattern
 
 Each has a related classes, suffixed with Impl, e.g. [NamedNodeImpl](https://github.com/SaftIng/Saft/blob/master/src/Saft/Rdf/NamedNodeImpl.php). That is a standard implementation and is ready to use. It reflects the requirements for each RDF entity. For instance, a NamedNode needs to be an URI. If its not, the instantiation will fail (exception will be thrown).
 
