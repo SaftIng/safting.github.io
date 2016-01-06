@@ -12,11 +12,11 @@ You have reached the documentation of the Saft project. Here you will find infor
 
 ## Saft PHP framework
 
-<a class="btn" href="phpframework">Saft PHP framework</a>
-
 The Saft PHP Framework consists of the *Saft Library* and the *Saft Skeleton Application*.
 
 ![Structure of the whole Saft Framework](StructureOfSaft.svg)
+
+<a class="btn" href="phpframework">more information</a>
 
 ### Implementation Conventions
 
