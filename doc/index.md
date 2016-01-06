@@ -12,21 +12,22 @@ You have reached the documentation of the Saft project. Here you will find infor
 
 ## Saft PHP framework
 
+<a class="btn" href="phpframework">more information</a>
+
 The Saft PHP Framework consists of the *Saft Library* and the *Saft Skeleton Application*.
 
 ![Structure of the whole Saft Framework](StructureOfSaft.svg)
 
-<a class="btn" href="phpframework">more information</a>
 
 ### Implementation Conventions
 
-<a class="btn" href="phpframework/implementation-conventions">Conventions</a>
+<a class="btn" href="phpframework/implementation-conventions">more information</a>
 
 We use certain conventions, when building Saft components. Please have them in mind, when you constribute code or develop for/based on Saft.
 
 ## Saft REST interface
 
-<a class="btn" href="restinterface">Saft REST interface</a>
+<a class="btn" href="restinterface">more information</a>
 
 _Saft_ is a framework with the aim to specify components needed for software engineers to easily implement web applications using Semantic Web technology.
 For the interface towards the World Wide Web a [REST interface is specified](restinterface).
@@ -38,7 +39,7 @@ For server side implementation of Semantic Web applications, e.g. implementing a
 _Saft_ provides an _Application Programming Interface (API)_ which can be used by application developers to use and extend the provided library resp. framework.
 The API consists of all classes and methods tagged with the `@api` tag ([FIG-5 @api](https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md#81-api)). To identify the version when the class or method was introduces or changed the `@since` tag is used together with the according API-version ([FIG-5 @since](https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md#817-since)). Deprecated methods are marked with `@deprecated` ([FIG-5 @deprecated](https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md#85-deprecated)).
 
-[API classes and method](apiinfo).
+<a class="btn" href="apiinfo">API classes and method</a>
 
 ## Contribution
 
