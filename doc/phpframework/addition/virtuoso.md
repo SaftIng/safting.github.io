@@ -17,8 +17,8 @@ Store adapter to OpenLink's [Virtuoso Universal Server](http://virtuoso.openlink
 To install and setup a Virtuoso Universal Server please have a look here: http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSBuild
 
 Further information may be found here:
-- https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend
-- https://logd.tw.rpi.edu/tutorial/installing_using_virtuoso_sparql_endpoint
+  * https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend
+  * https://logd.tw.rpi.edu/tutorial/installing_using_virtuoso_sparql_endpoint
 
 We prefer to install Virtuoso using the according packages for your operating system. For instance, Virtuoso Universal Server is part of the extended software collection of Debian and Ubuntu. Please ask questions, how to install Virtuoso on your machine, in the Virtuoso [issue tracker](https://github.com/openlink/virtuoso-opensource/issues) or related channels (mailing list, forum, ...)
 
@@ -41,8 +41,8 @@ Unfortunately, the Linked Data Stack does not contain all packages needed. So yo
 > deb http://security.ubuntu.com/ubuntu precise-security main 
 
 After that run the following two commands to install Virtuoso Universal Server 7.1:
-* `sudo apt-get update`
-* `sudo apt-get install virtuoso-opensource-7.1 virtuoso-opensource-7.1-bin libvirtodbc0 libiodbc2`
+  * `sudo apt-get update`
+  * `sudo apt-get install virtuoso-opensource-7.1 virtuoso-opensource-7.1-bin libvirtodbc0 libiodbc2`
 
 The reason for these additional steps is, that Virtuoso 7.1 needs `libmagickwand4`, but it is not part of Ubuntu 14.04 repositories anymore.
 
