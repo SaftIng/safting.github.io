@@ -9,34 +9,32 @@ In _Saft_ we are using the concept of additions which are concrete implementatio
 
 The following list contains additions shipped with _Saft_ in the default distribution.
 
-### Virtuoso
-
-<a class="btn" href="virtuoso">More information</a>
-
-Store adapter to OpenLink's [Virtuoso Universal Server](http://virtuoso.openlinksw.com/). It provides triple/quad store functionality as well as RDBMS functionality.
-
-### HttpStore
-
-<a class="btn" href="httpstore">More information</a>
-
-Store adapter to access SPARQL-endpoints over HTTP. 
-
 ### ARC2
 
 <a class="btn" href="ARC2">More information</a>
 
 This backend provides a Store adapter which utilizes ARC2 for storing RDF data in a MySQL database. ARC2 itself also provides serializer and parser for a couple of RDF serializations. It is planned to support that too.
 
-Saft supports ARC2 for storing RDF in a MySQL database. 
+Saft supports ARC2 for storing RDF in a MySQL database.
 
-### MemcacheD
+### Erfurt
 
-Cache adapter to store cache entries in the RAM using MemcacheD daemon. 
+The [Erfurt framework](https://github.com/AKSW/Erfurt) is a mature Semantic Web API for Social Semantic Software. It provides a good query cache solution we wanted to provide through Saft.
 
-Requires the php extension `memcached` which is provided by the package `php5-memcached` in [debian](https://packages.debian.org/stable/php5-memcached) and [ubuntu](http://packages.ubuntu.com/trusty/php5-memcached) and the memcached (daemon), which is provided by the package `memcached` in [debian](https://packages.debian.org/stable/memcached) and [ubuntu](http://packages.ubuntu.com/trusty/memcached)
+### HttpStore
+
+<a class="btn" href="httpstore">More information</a>
+
+Store adapter to access SPARQL-endpoints over HTTP.
 
 ### Redland
 
 <a class="btn" href="redland">More information</a>
 
 Provides data serializer and parser. Implements the _Saft.data_ and _Saft.Rdf_ interfaces.
+
+### Virtuoso
+
+<a class="btn" href="virtuoso">More information</a>
+
+Store adapter to OpenLink's [Virtuoso Universal Server](http://virtuoso.openlinksw.com/). It provides triple/quad store functionality as well as RDBMS functionality.
