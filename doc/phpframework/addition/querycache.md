@@ -17,11 +17,13 @@ To get an idea what the QueryCache is for, here are a couple of code snippets.
 
 The QueryCache relies on the cache infrastructure located under saft.cache. It is simple key-value-pair based. All information about queries and their parts will be saved using the given cache instance.
 
-`// setup a cache instance`
-`$cache = new Cache( /* ... */ );`
+    <?php 
+  
+    // setup a cache instance
+    $cache = new Cache( /* ... */ );
 
-`// setup QueryCache instance with cache instance`
-`$queryCache = new QueryCache($cache);`
+    // setup QueryCache instance with cache instance
+    $queryCache = new QueryCache($cache);`
 
 
 ### Save a query result
@@ -30,22 +32,24 @@ Saving a query result is very simple, you just need the SPARQL query and the acc
 
 Our current caching infrastructure (with MemcacheD and FileCache) can serialize nearly all PHP-structure, no matter if its an array or an object structure.
 
-  // Instance of Query
-  $query = AbstractQuery::initByQueryString(
-    "SELECT ?s FROM <http://graph/> WHERE {?s ?p ?o.}"
-  );
+    <?php
+    
+    // Instance of Query
+    $query = AbstractQuery::initByQueryString(
+      "SELECT ?s FROM <http://graph/> WHERE {?s ?p ?o.}"
+    );
 
-  // The $result variable contains the result of a previous SPARQL query
-  $result = ...
+    // The $result variable contains the result of a previous SPARQL query
+    $result = array (/* ... */);
   
-  // store result for a given query
-  $queryCache->saveResult($query, $result);
+    // store result for a given query
+    $queryCache->saveResult($query, $result);
 
 
 After calling the saveResult method you can retrieve the result by calling:
 
-
-  $savedResult = $queryCache->getResult($query);
+    <?php 
+    $savedResult = $queryCache->getResult($query);
 
 Now you have the result in $savedResult, you stored previously. If you call saveResult for the same query but with different results, all obsolete information will be removed automatically.
 
@@ -59,7 +63,7 @@ Well, you don't have to think about that (anymore), because QueryCache will hand
 
 ### Storage structure
 
-![part interaction](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/querycache/querycache-overview.svg)
+![part interaction](https://rawgit.com/SaftIng/safting.github.io/master/doc/phpframework/addition/querycache/querycache-overview.svg)
 
 The QueryCache needs a key-value-pair based caching solution. It stores different parts of the query, using their value as keys. Of the given query the graph URIs (1) and triple patterns (2) will be extracted and used as keys and a list of according queries is the value. The query list contains SPARQL query strings. A graph URI can be part of different SPARQL queries, so it has a connection to each one of them. Same for the triple pattern. 
 
