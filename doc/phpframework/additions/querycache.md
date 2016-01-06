@@ -17,11 +17,12 @@ To get an idea what the QueryCache is for, here are a couple of code snippets.
 
 The QueryCache relies on the cache infrastructure located under saft.cache. It is simple key-value-pair based. All information about queries and their parts will be saved using the given cache instance.
 
-  // setup a cache instance
-  $cache = new Cache( /* ... */ );
+`// setup a cache instance`
+`$cache = new Cache( /* ... */ );`
 
-  // setup QueryCache instance with cache instance
-  $queryCache = new QueryCache($cache);
+`// setup QueryCache instance with cache instance`
+`$queryCache = new QueryCache($cache);`
+
 
 ### Save a query result
 
