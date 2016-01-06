@@ -16,13 +16,13 @@ For further information about the project goals, please have a look at the [Abou
 
 ## Getting started
 
-Saft grows rapidly and can be very overwhelming at the beginning. 
+In this section you will find information how to start using Saft.
 
-### Examples
+#### Examples
 
 If you want to dive in directly, please have a look into [Saft.example](https://github.com/SaftIng/Saft.example). This is a good starting point to check out parts of Saft. We tried to make the examples as clear as possible.
 
-### Documentation
+#### Documentation
 
 Our documentation grows with the code and contains primarly information about Saft and its components. Please have a [look](http://safting.github.io/doc).
 
@@ -30,10 +30,10 @@ Our documentation grows with the code and contains primarly information about Sa
 
 We provide integration packages for different systems to help you using Saft inside them.
 
-### for Wordpress
+#### for Wordpress
 
 That plugin provides a basic integration of Saft into Wordpress. ([Plugin page](https://github.com/SaftIng/Saft.wordpress))
 
-### for Drupal7
+#### for Drupal7
 
 That module provides a basic integration of Saft into Drupal7. ([Module page](https://github.com/SaftIng/Saft.drupal7))
