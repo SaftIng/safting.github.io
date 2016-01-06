@@ -25,6 +25,12 @@ The [Erfurt framework](https://github.com/AKSW/Erfurt) is a mature Semantic Web 
 
 Store adapter to access SPARQL-endpoints over HTTP.
 
+## QueryCache
+
+<a class="btn" href="querycache">More information</a>
+
+Our implementation of a query cache solution. It helps you to minimize database load by caching SPARQL queries. Furthermore, if something changed in the data, the query cache is able to recognize that and adapt its cached entries.
+
 ## Redland
 
 <a class="btn" href="redland">More information</a>
