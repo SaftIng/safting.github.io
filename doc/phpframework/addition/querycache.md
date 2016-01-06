@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: saft.querycache
+title: Query Cache
 ---
 
 The QueryCache component provides a layer based on our cache infrastructure to store query results and provide them later on. Our intention while developing it was, to provide a fast way, to reuse query results. 
