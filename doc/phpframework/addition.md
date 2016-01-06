@@ -19,6 +19,10 @@ Saft supports ARC2 for storing RDF in a MySQL database.
 
 The [Erfurt framework](https://github.com/AKSW/Erfurt) is a mature Semantic Web API for Social Semantic Software. It provides a good query cache solution we wanted to provide through Saft.
 
+## EasyRdf
+
+EasyRdf is a PHP library designed to make it easy to consume and produce RDF. They provide a good parsing and serialization infrastructure which we support through that addition. If you need more of EasyRdf that addition helps you to use their stuff inside of Saft.
+
 ## HttpStore
 
 <a class="btn" href="httpstore">More information</a>
