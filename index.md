@@ -32,7 +32,9 @@ We provide integration packages for different systems to help you using Saft ins
 
 #### for Wordpress
 
-That plugin provides a basic integration of Saft into Wordpress. ([Plugin page](https://github.com/SaftIng/Saft.wordpress))
+That plugin provides an integration of Saft into Wordpress. Currently, we support ARC2 to be used as store and integrated into active MySQL-database from WordPress, which means, it uses the same access credentials from the `wp-config.php` file.
+
+[**Plugin page**](https://github.com/SaftIng/Saft.wordpress)
 
 #### for Drupal7
 
