@@ -6,6 +6,12 @@ permalink: /blog/
 
 ## Blog
 
+### Saft version 0.1 was released!
+
+2016-03-08
+
+Today we released the first stable version of saft. Look [here](https://github.com/SaftIng/Saft/releases/tag/0.1) for more information. From now on, you don't need to use unstable annotation in composer (e.g. @dev or minimum-stability: dev) anymore.
+
 ### Saft version 0.1.0-beta4 released (also Saft.wordpress)
 
 2015-12-28
